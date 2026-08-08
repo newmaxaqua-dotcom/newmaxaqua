@@ -120,6 +120,12 @@
 	=============================================*/
 	function mainSlider() {
 		var BasicSlider = $('.slider-active');
+
+		// on mobile the clip gets its own section below the hero (.mobile-video-area),
+		// so drop the video slide here before slick counts the slides
+		if (window.matchMedia('(max-width: 767.98px)').matches) {
+			BasicSlider.find('.slider-video').remove();
+		}
 		BasicSlider.on('init', function (e, slick) {
 			var $firstAnimatingElements = $('.single-slider:first-child').find('[data-animation]');
 			doAnimations($firstAnimatingElements);

@@ -480,3 +480,44 @@ section[id] {
 	object-position: center;
 	z-index: -2;
 }
+
+/* mobile-only video section — desktop keeps the clip as the 4th hero slide.
+   Full aspect ratio here (no cover-crop), so the footage stays fully visible. */
+.mobile-video-area {
+	display: none;
+	/* no bottom padding — the following section's own top padding carries the gap */
+	padding: 45px 0 0;
+}
+/* deliberately smaller than a full section heading — this sits above the hero */
+.mobile-video-area .section-title {
+	margin-bottom: 22px;
+}
+.mobile-video-area .section-title .sub-title {
+	font-size: 15px;
+	margin-bottom: 8px;
+}
+.mobile-video-area .section-title .sub-title svg {
+	width: 20px;
+}
+.mobile-video-area .section-title .title {
+	font-size: 26px;
+	line-height: 1.3;
+}
+.mobile-video-wrap {
+	border-radius: 20px;
+	overflow: hidden;
+	line-height: 0;
+	box-shadow: 0 8px 26px rgba(0, 0, 0, .14);
+}
+.mobile-video-wrap video {
+	display: block;
+	width: 100%;
+	height: auto;
+	/* reserve the clip's real ratio so the page doesn't jump before metadata loads */
+	aspect-ratio: 640 / 352;
+}
+@media (max-width: 767.98px) {
+	.mobile-video-area {
+		display: block;
+	}
+}
