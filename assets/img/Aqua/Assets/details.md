@@ -97,7 +97,7 @@ New Max Aqua keeps water storage safe and hygienic with a professional tank clea
 •	Step 4 — Sanitization
 •	Step 5 — Refill & Final Check
 8. Contact Details
-Phone (India): 9747177283  |  7306786132
+Phone (India): 7306786132  |  9747177283
 Phone (Kuwait): +965 67768772
 Email: maxcompletewatersolution2020@gmail.com
 Head Office: Kottayam, Kerala
