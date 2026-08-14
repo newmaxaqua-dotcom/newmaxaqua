@@ -1,18 +1,10 @@
 (function ($) {
 	"use strict";
 
-	/*=============================================
-		=    		 Preloader			      =
-	=============================================*/
-	function preloader() {
-		$('#preloader').delay(0).fadeOut();
-	};
-
 	var isLoaded = false;
 	function initScripts() {
 		if (isLoaded) return;
 		isLoaded = true;
-		preloader();
 		mainSlider();
 		wowAnimation();
 		aosAnimation();
