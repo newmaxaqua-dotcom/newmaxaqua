@@ -521,3 +521,465 @@ section[id] {
 		display: block;
 	}
 }
+
+/*=============================================
+    Vessels Section — Responsive Pricing Layout
+=============================================*/
+
+/* Desktop Table Wrapper & Card */
+.vessel-table-card {
+    background: var(--tg-white);
+    border: 1px solid #e1e9f4;
+    border-radius: 28px;
+    padding: 30px 28px 24px;
+    box-shadow: 0 12px 40px rgba(18, 57, 172, 0.06);
+    position: relative;
+    overflow: hidden;
+}
+
+.vessel-pricing-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+/* Header Columns */
+.vessel-pricing-table thead th {
+    border: none;
+    padding: 0 8px 24px;
+    vertical-align: top;
+}
+
+.vessel-col-specs-th {
+    width: 210px;
+    min-width: 180px;
+    text-align: center;
+}
+
+.vessel-col-product-th {
+    text-align: center;
+    min-width: 155px;
+}
+
+.vessel-product-col-card {
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.vessel-product-thumb {
+    background: var(--tg-blue-two);
+    border-radius: 22px;
+    padding: 16px 12px 24px;
+    height: 140px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-sizing: border-box;
+}
+
+.vessel-product-col-card:hover .vessel-product-thumb {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(18, 57, 172, 0.08);
+}
+
+.vessel-product-thumb img {
+    max-height: 115px;
+    max-width: 100%;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.vessel-product-col-card:hover .vessel-product-thumb img {
+    transform: scale(1.04);
+}
+
+/* Specs Column Thumb Styling */
+.vessel-specs-thumb-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.vessel-specs-icon-circle {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: var(--tg-white);
+    color: var(--tg-heading-font-color);
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 14px rgba(18, 57, 172, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.vessel-specs-col-card:hover .vessel-specs-icon-circle {
+    transform: scale(1.08);
+}
+
+.vessel-specs-tag {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--tg-heading-font-color);
+    background: rgba(18, 57, 172, 0.08);
+    padding: 3px 10px;
+    border-radius: 20px;
+}
+
+/* Product & Specs Pills (Consistent Row & Height) */
+.vessel-product-pill {
+    background: var(--tg-secondary-color);
+    color: var(--tg-white);
+    border-radius: 50px;
+    padding: 0 16px;
+    height: 34px;
+    line-height: 34px;
+    margin: -17px auto 8px;
+    font-size: 15px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 14px rgba(130, 204, 9, 0.32);
+    position: relative;
+    z-index: 2;
+    letter-spacing: 0.2px;
+    white-space: nowrap;
+}
+
+.vessel-specs-pill {
+    background: var(--tg-heading-font-color);
+    box-shadow: 0 4px 14px rgba(18, 57, 172, 0.3);
+}
+
+.vessel-product-desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    font-size: 12px;
+    color: var(--tg-body-font-color);
+    font-weight: 500;
+    line-height: 1.35;
+    padding: 0 4px;
+    text-align: center;
+}
+
+/* Table Body Pricing Rows (Uniform Height & Centering) */
+.vessel-pricing-table tbody tr {
+    height: 64px;
+    transition: background-color 0.15s ease;
+    border-bottom: 1px solid #edf3fa;
+}
+
+.vessel-pricing-table tbody tr:last-child {
+    border-bottom: 2px solid #e2ecf8;
+}
+
+.vessel-pricing-table tbody tr:hover {
+    background-color: #f7fbff;
+}
+
+.vessel-row-size-th {
+    padding: 12px 18px;
+    text-align: left;
+    border: none;
+    vertical-align: middle;
+}
+
+.vessel-size-cell-inner {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+.vessel-size-dims {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--tg-heading-font-color);
+    line-height: 1;
+}
+
+.vessel-cap-tag {
+    font-size: 12px;
+    font-weight: 600;
+    color: #2b5ab8;
+    background: #eaf2fd;
+    padding: 5px 10px;
+    border-radius: 12px;
+    border: 1px solid #d4e3f9;
+    line-height: 1;
+}
+
+/* Pricing Cells */
+.vessel-price-td {
+    padding: 12px 10px;
+    text-align: center;
+    border: none;
+    vertical-align: middle;
+}
+
+.vessel-price-val {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 96px;
+    height: 38px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--tg-heading-font-color);
+    background: #f8fbfe;
+    border: 1px solid #eaf1fa;
+    padding: 0 14px;
+    border-radius: 12px;
+    transition: all 0.15s ease;
+    letter-spacing: -0.2px;
+    line-height: 1;
+}
+
+.vessel-pricing-table tbody tr:hover .vessel-price-val {
+    background: #ffffff;
+    border-color: #bee0ff;
+    color: var(--tg-primary-color);
+    box-shadow: 0 4px 12px rgba(0, 124, 251, 0.12);
+}
+
+/* Table Footer Row */
+.vessel-table-tfoot-row {
+    height: 60px;
+}
+
+.vessel-table-tfoot-row td {
+    padding: 18px 8px 6px;
+    border: none;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.vessel-tfoot-feature {
+    text-align: left !important;
+}
+
+.vessel-tfoot-feature-inner {
+    font-size: 13px;
+    color: var(--tg-heading-font-color);
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.vessel-table-btn {
+    background: var(--tg-secondary-color);
+    color: var(--tg-white);
+    font-size: 13px;
+    font-weight: 600;
+    height: 34px;
+    padding: 0 16px;
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    box-shadow: 0 3px 10px rgba(130, 204, 9, 0.25);
+    white-space: nowrap;
+}
+
+.vessel-table-btn:hover {
+    background: var(--tg-heading-font-color);
+    color: var(--tg-white);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(18, 57, 172, 0.25);
+}
+
+.vessel-table-footer-note {
+    margin-top: 18px;
+    padding-top: 16px;
+    border-top: 1px solid #edf3fa;
+    font-size: 13px;
+    color: var(--tg-body-font-color);
+    text-align: center;
+}
+
+/* Tablet adjustments (768px - 991.98px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .vessel-table-card {
+        padding: 20px 14px 16px;
+    }
+    .vessel-col-specs-th {
+        width: 155px;
+        min-width: 145px;
+    }
+    .vessel-col-product-th {
+        min-width: 110px;
+    }
+    .vessel-product-thumb {
+        height: 110px;
+        padding: 10px 8px 18px;
+    }
+    .vessel-product-thumb img {
+        max-height: 80px;
+    }
+    .vessel-specs-icon-circle {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        margin-bottom: 4px;
+    }
+    .vessel-specs-tag {
+        font-size: 10px;
+        padding: 2px 8px;
+    }
+    .vessel-product-pill {
+        font-size: 13px;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 10px;
+        margin: -15px auto 6px;
+    }
+    .vessel-product-desc {
+        font-size: 11px;
+        height: 32px;
+    }
+    .vessel-pricing-table tbody tr {
+        height: 56px;
+    }
+    .vessel-row-size-th {
+        padding: 10px 8px;
+    }
+    .vessel-size-cell-inner {
+        gap: 6px;
+    }
+    .vessel-size-dims {
+        font-size: 14px;
+    }
+    .vessel-cap-tag {
+        font-size: 11px;
+        padding: 3px 6px;
+    }
+    .vessel-price-td {
+        padding: 10px 4px;
+    }
+    .vessel-price-val {
+        font-size: 14px;
+        min-width: 78px;
+        height: 32px;
+        padding: 0 8px;
+    }
+    .vessel-table-btn {
+        font-size: 12px;
+        height: 30px;
+        padding: 0 10px;
+    }
+}
+
+/* Mobile Cards Pricing Box */
+.mb-35 {
+    margin-bottom: 35px;
+}
+
+.vessel-mobile-pricing-box {
+    margin: 18px 10px 0;
+    background: var(--tg-white);
+    border-radius: 22px;
+    border: 1px solid #e1e9f4;
+    padding: 16px 16px 18px;
+    box-shadow: 0 4px 18px rgba(18, 57, 172, 0.05);
+}
+
+.vessel-mobile-pricing-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 9px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #edf2f8;
+}
+
+.vessel-m-head-col {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #8c97a8;
+}
+
+.vessel-mobile-pricing-list {
+    margin-bottom: 14px;
+}
+
+.vessel-mobile-price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px dashed #f0f4f9;
+}
+
+.vessel-mobile-price-row:last-child {
+    border-bottom: none;
+}
+
+.vessel-mobile-size-wrap {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+}
+
+.vessel-mobile-size-dim {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--tg-heading-font-color);
+}
+
+.vessel-mobile-size-cap {
+    font-size: 12px;
+    color: var(--tg-body-font-color);
+    font-weight: 500;
+}
+
+.vessel-mobile-price-val {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--tg-heading-font-color);
+    background: #f4f8fe;
+    border: 1px solid #e6f0fa;
+    padding: 3px 9px;
+    border-radius: 8px;
+    letter-spacing: -0.2px;
+}
+
+.vessel-mobile-card-action {
+    margin-top: 8px;
+}
+
+.vessel-mobile-enquiry-btn {
+    width: 100%;
+    padding: 10px 18px;
+    font-size: 14px;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: var(--tg-white) !important;
+}
