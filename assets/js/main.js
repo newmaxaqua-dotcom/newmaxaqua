@@ -561,56 +561,47 @@
 
 
 	/*=============================================
-		=         Project Active           =
+		=      Purifier Grid Toggle (View All)  =
 	=============================================*/
-	if (jQuery(".project-active").length > 0) {
-		let courses = new Swiper(".project-active", {
-			slidesPerView: 1,
-			spaceBetween: 30,
-			loop: true,
-			loopedSlides: 16,
-			autoplay: {
-				delay: 3000,
-				disableOnInteraction: false,
-			},
-			breakpoints: {
-				500: {
-					slidesPerView: 2,
-					spaceBetween: 20,
-				},
-				768: {
-					slidesPerView: 2.5,
-					spaceBetween: 20,
-				},
-				992: {
-					slidesPerView: 3.3,
-					spaceBetween: 20,
-				},
-				1200: {
-					slidesPerView: 3.5,
-					spaceBetween: 20,
-				},
-				1500: {
-					slidesPerView: 3.5,
-					spaceBetween: 30,
-				},
-			},
-			// If we need pagination
-			pagination: {
-				el: ".project-swiper-pagination",
-				clickable: true,
-			},
+	const togglePurifiersBtn = document.getElementById("btn-toggle-purifiers");
+	if (togglePurifiersBtn) {
+		togglePurifiersBtn.addEventListener("click", function () {
+			const extraItems = document.querySelectorAll(".purifier-item-extra");
+			const btnText = this.querySelector(".btn-text");
+			const btnIcon = this.querySelector("i");
+			const isHidden = extraItems.length > 0 && (extraItems[0].style.display === "none" || extraItems[0].classList.contains("d-none"));
 
-			// Navigation arrows
-			navigation: {
-				nextEl: ".swiper-button-next",
-				prevEl: ".swiper-button-prev",
-			},
+			if (isHidden) {
+				extraItems.forEach(item => {
+					item.style.display = "";
+					item.classList.remove("d-none");
+					item.classList.add("is-showing");
+				});
+				if (btnText) btnText.textContent = "Show Less";
+				if (btnIcon) {
+					btnIcon.classList.remove("fa-chevron-down");
+					btnIcon.classList.add("fa-chevron-up");
+				}
+				this.setAttribute("aria-expanded", "true");
+			} else {
+				extraItems.forEach(item => {
+					item.style.display = "none";
+					item.classList.add("d-none");
+					item.classList.remove("is-showing");
+				});
+				if (btnText) btnText.textContent = "View All Products (17 Models)";
+				if (btnIcon) {
+					btnIcon.classList.remove("fa-chevron-up");
+					btnIcon.classList.add("fa-chevron-down");
+				}
+				this.setAttribute("aria-expanded", "false");
 
-			// And if we need scrollbar
-			scrollbar: {
-				el: ".swiper-scrollbar",
-			},
+				const productsSection = document.getElementById("products");
+				if (productsSection) {
+					const offset = productsSection.getBoundingClientRect().top + window.pageYOffset - 80;
+					window.scrollTo({ top: offset, behavior: "smooth" });
+				}
+			}
 		});
 	}
 
