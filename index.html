@@ -136,1632 +136,458 @@
 
     <link rel="shortcut icon" type="image/png" href="assets/img/Aqua/Assets/logonew/logo.png">
 
-    <!-- CSS here -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/css/odometer.css">
-    <link rel="stylesheet" href="assets/css/jarallax.css">
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="assets/css/BeerSlider.css">
-    <link rel="stylesheet" href="assets/css/tg-cursor.css">
-    <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/default.css">
-    <link rel="stylesheet" href="assets/css/aos.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="stylesheet" href="assets/css/aqua-custom.css">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300..600&display=swap">
+    <link rel="stylesheet" href="assets/new/newmax.css?v=27">
 </head>
-
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M21 16.5v3a2 2 0 0 1-2.2 2A19 19 0 0 1 2.5 5.2 2 2 0 0 1 4.5 3h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.5 10.8a16 16 0 0 0 4.7 4.7l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-left" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 2.5A9.5 9.5 0 0 0 3.8 16.8L2.5 21.5l4.8-1.3A9.5 9.5 0 1 0 12 2.5z"/><path d="M8.6 7.8c.2-.4.5-.4.8-.4h.6c.2 0 .4.1.5.4l.8 1.9c.1.2 0 .5-.1.7l-.6.7c-.1.2-.1.4 0 .6.6 1 1.4 1.8 2.5 2.4.2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.9.9c.2.1.3.3.3.5 0 .9-.6 1.9-1.6 2.1-1 .2-2.6-.1-4.6-1.7-2-1.6-3-3.6-3-4.8 0-1.1.5-1.9.7-2.3z" fill="currentColor" stroke="none"/></symbol>
+  </defs>
+</svg>
 
-    <!-- svg symbols -->
-    <svg width="0" height="0" style="position:absolute" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-        <symbol id="aqua-sparkle" viewBox="0 0 41 44" fill="none">
-            <path
-                d="M35.2826 37.5886C36.6662 36.9737 38.8185 36.205 40.8939 36.205C38.8185 36.205 36.6662 35.4363 35.2826 34.8213C34.6676 33.4377 33.8989 31.2854 33.8989 29.21C33.8989 31.2854 33.1303 33.4377 32.5153 34.8213C31.1317 35.4363 28.9794 36.205 26.9039 36.205C28.9794 36.205 31.1317 36.9737 32.5153 37.5886C33.1303 38.9722 33.8989 41.1246 33.8989 43.2C33.8989 41.1246 34.6676 38.9722 35.2826 37.5886Z"
-                fill="currentcolor" />
-            <path
-                d="M31.2085 13.5288C33.4377 12.5295 36.8968 11.2996 40.279 11.2996C36.8968 11.2996 33.4377 10.0698 31.2085 9.07046C30.2093 6.84128 28.9794 3.38221 28.9794 0C28.9794 3.38221 27.7495 6.84128 26.7502 9.07046C24.521 10.0698 21.0619 11.2996 17.6797 11.2996C21.0619 11.2996 24.521 12.5295 26.7502 13.5288C27.7495 15.758 28.9794 19.2171 28.9794 22.5993C28.9794 19.2171 30.2093 15.758 31.2085 13.5288Z"
-                fill="currentcolor" />
-            <path
-                d="M16.6036 31.7467C19.2939 30.5936 23.5986 28.9794 27.6726 28.9794C23.5986 28.9794 19.2939 27.442 16.6036 26.2121C15.3737 23.5986 13.8363 19.294 13.8363 15.22C13.8363 19.294 12.2989 23.5986 11.069 26.289C8.37865 27.442 4.07402 29.0563 0 29.0563C4.07402 29.0563 8.37865 30.5936 11.069 31.8235C12.2989 34.4371 13.8363 38.7417 13.8363 42.8926C13.8363 38.7417 15.3737 34.4371 16.6036 31.7467Z"
-                fill="currentcolor" />
-        </symbol>
-        <symbol id="aqua-card-shape" viewBox="0 0 375 240" fill="none">
-            <path
-                d="M16.1665 159.578C16.0105 165.687 11.1242 169.917 5.61408 171.118C8.2132 172.58 10.5004 174.512 12.4757 176.601C16.4784 180.987 17.9339 187.096 17.726 192.893C17.57 198.637 14.0352 205.007 9.77266 208.61C8.94095 209.289 8.10923 209.916 7.27752 210.438C7.48544 211.117 7.64139 211.796 7.74536 212.474C11.3321 215.085 13.4634 219.733 13.3594 224.119C13.3075 225.79 12.9436 227.304 12.2678 228.662C12.3718 228.714 12.4757 228.766 12.5797 228.819C13.5154 224.746 16.0105 220.725 19.0255 218.166C22.9762 214.824 27.7585 213.675 32.8008 213.675C37.947 213.675 42.7294 216.808 46.1083 220.464C49.5391 224.171 50.7347 229.393 50.5787 234.301C50.5787 234.301 50.5787 234.301 50.5787 234.354C51.6184 232.735 52.866 231.273 54.2175 230.124C58.0122 226.887 62.5866 225.79 67.473 225.79C71.5796 225.79 75.1663 227.409 77.9734 229.967C79.2729 227.879 80.8324 226.051 82.4958 224.641C87.1742 220.673 92.7363 219.367 98.7143 219.367C104.744 219.367 110.41 223.075 114.361 227.356C115.816 228.975 116.96 230.803 117.792 232.787C121.638 229.811 126.109 228.819 130.891 228.819C136.038 228.819 140.82 231.952 144.199 235.607C145.03 236.547 145.758 237.539 146.33 238.635C149.241 236.286 152.568 234.771 156.259 234.093C158.182 233.988 160.105 233.884 162.029 233.779C164.628 233.884 167.019 234.51 169.254 235.659C169.566 234.876 169.93 234.093 170.398 233.361C171.385 230.907 172.893 228.871 175.024 227.2C176.948 225.477 179.131 224.328 181.574 223.753C183.861 222.813 186.304 222.448 188.852 222.709H189.475C192.958 222.97 196.077 224.067 198.988 226.051C200.288 227.2 201.535 228.349 202.835 229.55C205.018 232.16 206.422 235.137 207.045 238.479C207.097 238.949 207.097 239.419 207.149 239.941C209.748 237.696 213.283 236.39 216.766 236.39C219.833 236.39 222.484 237.696 224.459 239.732C224.667 239.523 224.875 239.314 225.135 239.158C229.814 235.189 235.376 233.884 241.354 233.884C243.173 233.884 244.992 234.249 246.708 234.824C248.059 230.646 250.71 226.625 253.777 224.015C258.456 220.046 264.018 218.74 269.996 218.74C276.026 218.74 281.692 222.448 285.642 226.73C287.826 229.132 289.229 232.056 290.061 235.137C292.556 231.429 297.183 229.289 301.757 229.289C304.148 229.289 306.279 230.124 308.047 231.429C308.047 231.273 308.047 231.116 308.047 230.959C308.203 226.103 311.166 220.673 314.805 217.592C318.755 214.25 323.538 213.101 328.58 213.101C333.726 213.101 338.508 216.234 341.887 219.889C341.991 219.994 342.095 220.15 342.199 220.255C342.199 219.889 342.147 219.524 342.199 219.158C342.355 213.049 347.241 208.819 352.752 207.618C348.697 203.702 346.306 197.853 346.462 192.318C346.618 187.619 349.477 182.449 352.96 179.473C355.143 177.593 357.586 176.444 360.185 175.817C359.041 173.102 358.47 170.178 358.522 167.306C358.574 165.739 358.937 164.068 359.509 162.502C355.767 161.458 352.388 159.003 349.841 156.184C346.41 152.476 345.214 147.254 345.37 142.346C345.526 137.49 348.489 132.059 352.128 128.978C355.663 125.949 359.873 124.748 364.344 124.54C361.017 120.728 359.145 115.506 359.301 110.493C359.405 106.368 361.641 101.877 364.552 98.8484C360.133 98.2217 356.026 95.402 353.063 92.1645C349.633 88.457 348.437 83.2352 348.593 78.3268C348.749 73.4705 351.712 68.0398 355.351 64.959C359.301 61.617 364.084 60.4683 369.126 60.4683C370.01 60.4683 370.893 60.5727 371.725 60.7293C367.099 56.8652 364.396 50.5469 364.552 44.594C364.708 39.8944 367.567 34.7249 371.049 31.7484C372.297 30.7041 373.648 29.8686 375 29.242C373.233 27.6232 371.725 25.639 370.633 23.4458C370.01 23.498 369.386 23.498 368.762 23.498C363.616 23.498 358.834 20.365 355.455 16.7097C353.999 15.091 352.908 13.2111 352.18 11.1746C351.088 13.1067 349.633 14.8299 348.125 16.1353C344.33 19.3728 339.756 20.4694 334.87 20.4694C324.733 20.4694 317.768 10.4958 317.768 1.20101C315.74 6.10949 310.334 9.03368 304.98 9.03368C303.005 9.03368 301.185 8.45929 299.626 7.51937C298.43 10.2869 296.559 12.8456 294.479 14.621C290.685 17.8585 286.11 18.9551 281.224 18.9551C272.179 18.9551 265.681 10.9657 264.382 2.66311C262.874 3.39416 261.263 3.96855 259.547 4.28186C257.988 4.3863 256.428 4.43852 254.817 4.54295C254.401 4.54295 254.037 4.49073 253.621 4.43852C253.621 4.96069 253.621 5.48287 253.517 6.05727V6.68388C253.258 10.1825 252.166 13.3155 250.191 16.2397C249.047 17.5452 247.903 18.7984 246.708 20.1039C244.109 22.297 241.146 23.7069 237.819 24.3335C236.207 24.4379 234.544 24.5424 232.932 24.5946C230.333 24.4902 227.942 23.7591 225.759 22.4015C223.316 21.4093 221.288 19.895 219.625 17.7541C217.91 15.822 216.766 13.6289 216.194 11.1746C215.882 10.4436 215.674 9.76473 215.518 9.03368C210.06 8.72038 205.59 5.53509 202.731 1.14879C201.795 1.09657 200.859 1.09657 199.924 1.04436C199.664 1.09657 199.456 1.20101 199.196 1.25323C198 1.72319 196.805 2.08871 195.557 2.24537C195.557 2.29758 195.557 2.29758 195.557 2.3498C195.349 9.60808 188.592 14.2033 181.938 14.2033C175.7 14.2033 171.23 8.72038 170.294 3.02863C169.93 3.39416 169.566 3.70747 169.202 4.02077C165.408 7.25828 160.833 8.35485 155.947 8.35485C155.323 8.35485 154.699 8.30264 154.127 8.25042C152.672 11.1224 150.697 13.6811 148.461 15.5609C143.783 19.5295 138.221 20.8349 132.243 20.8349C126.213 20.8349 120.547 17.1274 116.596 12.8456C116.076 12.2712 115.609 11.6446 115.141 11.018C113.685 11.2791 112.178 11.3835 110.67 11.3835C106.408 11.3835 102.717 9.60808 99.8579 6.84054C99.8059 6.84054 99.7539 6.89275 99.65 6.89275C97.6747 7.72824 95.6473 7.98933 93.4641 7.78046H92.6843C89.7214 7.57159 87.0703 6.63166 84.6271 4.96069C84.3672 4.6996 84.0553 4.43852 83.7954 4.17743C80.4685 6.84054 76.5179 7.78046 72.3593 7.78046C71.1637 7.78046 69.9681 7.6238 68.8765 7.3105C67.7329 9.19034 66.3294 10.9135 64.8219 12.219C60.8712 15.5609 56.0889 16.7097 51.0466 16.7097C45.9003 16.7097 41.118 13.5766 37.7391 9.92139C35.296 7.04941 33.9964 3.55081 33.5286 0C31.1374 1.51432 28.2783 2.40202 25.4193 2.40202C23.7039 2.40202 22.0925 1.98428 20.637 1.25323C20.2211 6.7361 16.8423 12.6367 12.7357 16.1353C10.7083 17.8585 8.52509 19.0595 6.18589 19.895C9.30482 21.096 12.1638 23.2892 14.3991 25.6912C17.8299 29.3986 19.0255 34.6204 18.8696 39.5289C18.7136 44.3852 15.7506 49.8158 12.1119 52.8967C10.7083 54.0455 9.25284 54.9854 7.69337 55.6642C7.69337 55.7164 7.74536 55.7164 7.74536 55.7686C8.88897 57.0219 9.6687 58.484 10.0326 60.1027C10.6564 61.617 10.9163 63.2358 10.7083 64.9068V66.8388C10.5524 69.1364 9.82465 71.2251 8.52509 73.1572C8.36914 73.3661 8.16121 73.5749 8.00527 73.7316C9.35681 74.7237 10.6044 75.8725 11.696 77.2824C13.7233 79.5278 15.0749 82.0864 15.7506 85.0106C16.8942 87.726 17.3101 90.5979 16.9462 93.5744V94.3576C16.6343 98.4306 15.3348 102.19 13.0475 105.584C12.3198 106.368 11.644 107.151 10.9163 107.934C13.3594 110.597 14.763 114.357 14.659 117.908C14.503 123.443 10.5004 127.464 5.66607 129.03C5.87399 129.552 6.08192 130.075 6.18589 130.649C6.80967 132.163 7.06959 133.782 6.86166 135.453V136.08C6.70571 138.377 5.97796 140.466 4.6784 142.398L2.39118 144.957C1.61145 145.583 0.831716 146.105 0 146.575C1.40352 146.158 2.91101 145.897 4.41849 145.897C11.4881 145.897 16.3224 153.05 16.1665 159.578Z"
-                fill="currentcolor" />
-        </symbol>
-    </svg>
-
-    <!-- Scroll-top -->
-    <button class="scroll-top scroll-to-target" data-target="html">
-        <i class="fas fa-angle-up"></i>
-    </button>
-    <!-- Scroll-top-end-->
-
-    <!-- whatsapp-float -->
-    <a href="https://wa.me/9173067 86132" class="whatsapp-float" target="_blank" rel="noopener"
-        aria-label="Chat on WhatsApp">
-        <i class="fab fa-whatsapp"></i>
+<header class="hdr">
+  <div class="wrap hdr__in">
+    <a class="brand" href="#main" aria-label="New Max Aqua home">
+      <img src="assets/img/Aqua/Assets/logonew/logo.png" alt="" width="44" height="44">
+      <span><b>New Max Aqua</b><small>Complete Water Solution &amp; Electricals</small></span>
     </a>
-    <!-- whatsapp-float-end -->
+    <nav class="nav" id="nav" aria-label="Primary">
+      <a href="#purifiers">Purifiers</a>
+      <a href="#services">Services</a>
+      <a href="#vessels">Filters</a>
+      <a href="#solar">Solar</a>
+      <a href="#about">About</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="hdr__call" href="tel:+917306786132"><svg class="ic"><use href="#i-phone"/></svg><span>73067 86132</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+      <svg class="ic"><use href="#i-menu"/></svg>
+    </button>
+  </div>
+</header>
 
-    <!-- header-area -->
-    <header>
-        <div class="header-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="header-top-left">
-                            <span><i class="fas fa-tint"></i> Complete Water Solution &amp; Electricals</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="header-top-right">
-                            <span><i class="fas fa-map-marker-alt"></i> Head Office : Kottayam &nbsp;|&nbsp; Branch :
-                                Ernakulam</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<main id="main">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap hero__stage">
+      <h1 class="hero__title"><span>We test your <br>water first.</span><span>Then we <br>fix it.</span></h1>
+      <div class="hero__3d" id="filter3d" role="img" aria-label="3D model of a New Max Aqua filtration vessel. Drag to rotate.">
+        <img class="hero__3d-fallback" src="assets/new/img/v-iron.webp" alt="" width="485" height="720">
+        <p class="hero__3d-hint">Drag to rotate</p>
+      </div>
+    </div>
+    <div class="wrap hero__under">
+      <p class="hero__lead">Water purifiers, iron and softener filters, solar water heaters and tank cleaning. Installed and serviced by our own team, with a free water test at your home before you buy anything.</p>
+      <div class="hero__calls">
+        <a href="tel:+917306786132"><small>Kottayam, head office</small><b>+91 73067 86132</b></a>
+        <a href="tel:+919747177283"><small>Ernakulam, branch</small><b>+91 97471 77283</b></a>
+      </div>
+      <p class="hero__alt"><a class="btn" href="https://wa.me/917306786132?text=Hi%2C%20I%20would%20like%20to%20book%20a%20free%20water%20test" target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Book a free water test</a></p>
+    </div>
+    <div class="wrap">
+      <ul class="facts">
+        <li>Free water test at home</li>
+        <li>AMC &amp; filter replacement</li>
+        <li>EMI through Bajaj Finserv</li>
+        <li>Member, Waters Kerala</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Purifier models (moved up) -->
+  <section class="sec models" id="purifiers">
+    <div class="wrap">
+      <div class="sec__head">
+        <h2>Purifiers</h2>
+        <p>17 models from ₹ 9,000, plus custom systems from ₹ 2,500. Tell us your water source and we'll suggest the right one. Prices are indicative.</p>
+      </div>
+
+      <div class="carousel" id="carousel" aria-roledescription="carousel" aria-label="Purifier models">
+        <div class="car-stage" id="carStage"></div>
+        <div class="car-bar">
+          <button class="car-btn car-btn--prev" type="button" aria-label="Previous model"><svg class="ic"><use href="#i-left"/></svg></button>
+          <div class="car-info" id="carInfo" aria-live="polite"></div>
+          <button class="car-btn car-btn--next" type="button" aria-label="Next model"><svg class="ic"><use href="#i-right"/></svg></button>
         </div>
-        <div class="header-logo-area">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-xl-4 col-lg-3">
-                        <div class="logo">
-                            <a href="index.html" style="display: flex; align-items: center; gap: 15px;">
-                                <img src="assets/img/Aqua/Assets/logonew/logo.png" alt="New Max Aqua">
-                                <span
-                                    style="font-size: 26px; font-weight: 800; color: var(--tg-primary-color); line-height: 1;">NEWMAX
-                                    AQUA</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-xl-8 col-lg-9">
-                        <div class="header-contact-info">
-                            <div class="row justify-content-end align-items-center" style="gap: 15px;">
-                                <div class="col-auto">
-                                    <div class="contact-info-item">
-                                        <div class="icon">
-                                            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M19.5443 8.90191H23.103V12.4627C23.103 13.4419 23.9038 14.2431 24.8824 14.2431C25.8611 14.2431 26.6618 13.4419 26.6618 12.4627V8.90191H30.2206C31.1993 8.90191 32 8.10074 32 7.12153C32 6.14232 31.1993 5.34115 30.2206 5.34115H26.6618V1.78038C26.6618 0.801172 25.8611 0 24.8824 0C23.9038 0 23.103 0.801172 23.103 1.78038V5.34115H19.5443C18.5656 5.34115 17.7649 6.14232 17.7649 7.12153C17.7649 8.10074 18.5656 8.90191 19.5443 8.90191ZM28.8149 21.8453L24.2952 21.329C23.7638 21.2665 23.2251 21.3254 22.7197 21.5012C22.2143 21.6769 21.7552 21.965 21.377 22.3438L18.1029 25.6197C13.0516 23.0492 8.94581 18.9411 6.37676 13.887L9.66863 10.5933C10.4338 9.82771 10.8074 8.74167 10.6829 7.67345L10.1669 3.18688C10.0708 2.31804 9.65861 1.51493 9.0089 0.930516C8.35918 0.346106 7.51732 0.0212413 6.64367 0.0178038H3.56532C1.55461 0.0178038 -0.118021 1.69136 0.00653656 3.70319C0.949614 18.9077 13.1029 31.0499 28.2811 31.9935C30.2918 32.1181 31.9644 30.4445 31.9644 28.4327V25.3526C31.9822 23.5723 30.6121 22.0411 28.8149 21.8453V21.8453Z"
-                                                    fill="currentcolor" />
-                                            </svg>
-                                        </div>
-                                        <div class="content">
-                                            <h4 class="title">Kottayam (Head Office):</h4>
-                                            <a href="tel:+917306786132">+91 73067 86132</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-auto">
-                                    <div class="contact-info-item">
-                                        <div class="icon">
-                                            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M19.5443 8.90191H23.103V12.4627C23.103 13.4419 23.9038 14.2431 24.8824 14.2431C25.8611 14.2431 26.6618 13.4419 26.6618 12.4627V8.90191H30.2206C31.1993 8.90191 32 8.10074 32 7.12153C32 6.14232 31.1993 5.34115 30.2206 5.34115H26.6618V1.78038C26.6618 0.801172 25.8611 0 24.8824 0C23.9038 0 23.103 0.801172 23.103 1.78038V5.34115H19.5443C18.5656 5.34115 17.7649 6.14232 17.7649 7.12153C17.7649 8.10074 18.5656 8.90191 19.5443 8.90191ZM28.8149 21.8453L24.2952 21.329C23.7638 21.2665 23.2251 21.3254 22.7197 21.5012C22.2143 21.6769 21.7552 21.965 21.377 22.3438L18.1029 25.6197C13.0516 23.0492 8.94581 18.9411 6.37676 13.887L9.66863 10.5933C10.4338 9.82771 10.8074 8.74167 10.6829 7.67345L10.1669 3.18688C10.0708 2.31804 9.65861 1.51493 9.0089 0.930516C8.35918 0.346106 7.51732 0.0212413 6.64367 0.0178038H3.56532C1.55461 0.0178038 -0.118021 1.69136 0.00653656 3.70319C0.949614 18.9077 13.1029 31.0499 28.2811 31.9935C30.2918 32.1181 31.9644 30.4445 31.9644 28.4327V25.3526C31.9822 23.5723 30.6121 22.0411 28.8149 21.8453V21.8453Z"
-                                                    fill="currentcolor" />
-                                            </svg>
-                                        </div>
-                                        <div class="content">
-                                            <h4 class="title">Ernakulam (Branch):</h4>
-                                            <a href="tel:+919747177283">+91 97471 77283</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="car-tabs" id="carTabs" role="tablist"></div>
+      </div>
+
+        <ul class="model-grid" id="modelGrid" hidden>
+          <li class="model" data-name="Water Purifier System" data-variant="" data-price="Starting from ₹ 2,500">
+            <img src="assets/new/img/p-system.webp?v=2" alt="Water Purifier System water purifier" width="480" height="576" loading="lazy">
+            <h3>Water Purifier System</h3><p><b>Starting from ₹ 2,500</b></p>
+            <a href="https://wa.me/917306786132?text=Hi%2C%20I%20want%20to%20enquire%20about%20Water%20Purifier%20System" target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Enquire / Buy</a>
+          </li>
+          <li class="model" data-name="Dolphin Gold" data-variant="" data-price="₹ 9,000">
+            <img src="assets/new/img/p-dolphin-gold.webp?v=2" alt="Dolphin Gold water purifier" width="480" height="576" loading="lazy">
+            <h3>Dolphin Gold</h3><p><b>₹ 9,000</b></p>
+            <a href="https://wa.me/917306786132?text=Hi%2C%20I%20want%20to%20enquire%20about%20Dolphin%20Gold" target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Enquire / Buy</a>
+          </li>
+          <li class="model" data-name="Aqua Mars" data-variant="Premium Grey" data-price="₹ 10,000">
+            <img src="assets/new/img/p-aqua-mars.webp?v=2" alt="Aqua Mars (Premium Grey) water purifier" width="480" height="576" loading="lazy">
+            <h3>Aqua Mars</h3><p>Premium Grey · <b>₹ 10,000</b></p>
+            <a href="https://wa.me/917306786132?text=Hi%2C%20I%20want%20to%20enquire%20about%20Aqua%20Mars%20%28Premium%20Grey%29" target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Enquire / Buy</a>
+          </li>
+          <li class="model" data-name="P&amp;A Fighter 1.0" data-variant="" data-price="₹ 12,000">
+            <img src="assets/new/img/p-fighter-1.webp?v=2" alt="P&amp;A Fighter 1.0 water purifier" width="480" height="576" loading="lazy">
+            <h3>P&amp;A Fighter 1.0</h3><p><b>₹ 12,000</b></p>
+            <a href="https://wa.me/917306786132?text=Hi%2C%20I%20want%20to%20enquire%20about%20P%26A%20Fighter%201.0" target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Enquire / Buy</a>
+          </li>
+          <li class="model" data-name="Flonix Gold" data-variant="" data-price="₹ 12,500">
+            <img src="assets/new/img/p-flonix-gold.webp?v=2" alt="Flonix Gold water purifier" width="480" height="576" loading="lazy">
+            <h3>Flonix Gold</h3><p><b>₹ 12,500</b></p>
+            <a href="https://wa.me/917306786132?text=Hi%2C%20I%20want%20to%20enquire%20about%20Flonix%20Gold" target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Enquire / Buy</a>
+          </li>
+          <li class="model" data-name="Aqua Jade" data-variant="RO + UV + Copper" data-price="₹ 12,750">
+            <img src="assets/new/img/p-aqua-jade.webp?v=2" alt="Aqua Jade (RO + UV + Copper) water purifier" width="480" height="576" loading="lazy">
+            <h3>Aqua Jade</h3><p>RO + UV + Copper · <b>₹ 12,750</b></p>
+            <a href="https://wa.me/917306786132?text=Hi%2C%20I%20want%20to%20enquire%20about%20Aqua%20Jade%20%28RO%20%2B%20UV%20%2B%20Copper%29" target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Enquire / Buy</a>
+          </li>
+          <li class="model" data-name="TX One Titanium" data-variant="White Gold" data-price="₹ 13,750">
+            <img src="assets/new/img/p-tx-one.webp?v=2" alt="TX One Titanium (White Gold) water purifier" width="480" height="576" loading="lazy">
+            <h3>TX One Titanium</h3><p>White Gold · <b>₹ 13,750</b></p>
+            <a href="https://wa.me/917306786132?text=Hi%2C%20I%20want%20to%20enquire%20about%20TX%20One%20Titanium%20%28White%20Gold%29" target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Enquire / Buy</a>
+          </li>
+          <li class="model" data-name="Flonix RO + UV" data-variant="" data-price="₹ 14,000">
+            <img src="assets/new/img/p-flonix-ro-uv.webp?v=2" alt="Flonix RO + UV water purifier" width="480" height="576" loading="lazy">
+            <h3>Flonix RO + UV</h3><p><b>₹ 14,000</b></p>
+            <a href="https://wa.me/917306786132?text=Hi%2C%20I%20want%20to%20enquire%20about%20Flonix%20RO%20%2B%20UV" target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Enquire / Buy</a>
+          </li>
+          <li class="model" data-name="Aqua 2090" data-variant="Mirror Black" data-price="₹ 14,000">
+            <img src="assets/new/img/p-2090-black.webp?v=2" alt="Aqua 2090 (Mirror Black) water purifier" width="480" height="576" loading="lazy">
+            <h3>Aqua 2090</h3><p>Mirror Black · <b>₹ 14,000</b></p>
+            <a href="https://wa.me/917306786132?text=Hi%2C%20I%20want%20to%20enquire%20about%20Aqua%202090%20%28Mirror%20Black%29" target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Enquire / Buy</a>
+          </li>
+          <li class="model" data-name="Aqua 2090" data-variant="Aqua Green" data-price="₹ 14,000">
+            <img src="assets/new/img/p-2090-green.webp?v=2" alt="Aqua 2090 (Aqua Green) water purifier" width="480" height="576" loading="lazy">
+            <h3>Aqua 2090</h3><p>Aqua Green · <b>₹ 14,000</b></p>
+            <a href="https://wa.me/917306786132?text=Hi%2C%20I%20want%20to%20enquire%20about%20Aqua%202090%20%28Aqua%20Green%29" target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Enquire / Buy</a>
+          </li>
+          <li class="model" data-name="Flonix LED" data-variant="" data-price="₹ 14,000">
+            <img src="assets/new/img/p-flonix-led.webp?v=2" alt="Flonix LED water purifier" width="480" height="576" loading="lazy">
+            <h3>Flonix LED</h3><p><b>₹ 14,000</b></p>
+            <a href="https://wa.me/917306786132?text=Hi%2C%20I%20want%20to%20enquire%20about%20Flonix%20LED" target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Enquire / Buy</a>
+          </li>
+          <li class="model" data-name="P&amp;A Fighter 2.0" data-variant="" data-price="₹ 14,000">
+            <img src="assets/new/img/p-fighter-2.webp?v=2" alt="P&amp;A Fighter 2.0 water purifier" width="480" height="576" loading="lazy">
+            <h3>P&amp;A Fighter 2.0</h3><p><b>₹ 14,000</b></p>
+            <a href="https://wa.me/917306786132?text=Hi%2C%20I%20want%20to%20enquire%20about%20P%26A%20Fighter%202.0" target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Enquire / Buy</a>
+          </li>
+          <li class="model" data-name="Aqua 9090" data-variant="White" data-price="₹ 14,500">
+            <img src="assets/new/img/p-9090-white.webp?v=2" alt="Aqua 9090 (White) water purifier" width="480" height="576" loading="lazy">
+            <h3>Aqua 9090</h3><p>White · <b>₹ 14,500</b></p>
+            <a href="https://wa.me/917306786132?text=Hi%2C%20I%20want%20to%20enquire%20about%20Aqua%209090%20%28White%29" target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Enquire / Buy</a>
+          </li>
+          <li class="model" data-name="Aqua 9090" data-variant="Black" data-price="₹ 14,500">
+            <img src="assets/new/img/p-9090-black.webp?v=2" alt="Aqua 9090 (Black) water purifier" width="480" height="576" loading="lazy">
+            <h3>Aqua 9090</h3><p>Black · <b>₹ 14,500</b></p>
+            <a href="https://wa.me/917306786132?text=Hi%2C%20I%20want%20to%20enquire%20about%20Aqua%209090%20%28Black%29" target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Enquire / Buy</a>
+          </li>
+          <li class="model" data-name="Flonix LED" data-variant="Cobalt Blue" data-price="₹ 14,500">
+            <img src="assets/new/img/p-flonix-cobalt.webp?v=2" alt="Flonix LED (Cobalt Blue) water purifier" width="480" height="576" loading="lazy">
+            <h3>Flonix LED</h3><p>Cobalt Blue · <b>₹ 14,500</b></p>
+            <a href="https://wa.me/917306786132?text=Hi%2C%20I%20want%20to%20enquire%20about%20Flonix%20LED%20%28Cobalt%20Blue%29" target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Enquire / Buy</a>
+          </li>
+          <li class="model" data-name="P&amp;A Fighter 3.0" data-variant="" data-price="₹ 16,000">
+            <img src="assets/new/img/p-fighter-3.webp?v=2" alt="P&amp;A Fighter 3.0 water purifier" width="480" height="576" loading="lazy">
+            <h3>P&amp;A Fighter 3.0</h3><p><b>₹ 16,000</b></p>
+            <a href="https://wa.me/917306786132?text=Hi%2C%20I%20want%20to%20enquire%20about%20P%26A%20Fighter%203.0" target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Enquire / Buy</a>
+          </li>
+          <li class="model" data-name="Under Sink Fighter UTC" data-variant="Up to 3000 TDS" data-price="₹ 25,000">
+            <img src="assets/new/img/p-undersink.webp?v=2" alt="Under Sink Fighter UTC (Up to 3000 TDS) water purifier" width="480" height="576" loading="lazy">
+            <h3>Under Sink Fighter UTC</h3><p>Up to 3000 TDS · <b>₹ 25,000</b></p>
+            <a href="https://wa.me/917306786132?text=Hi%2C%20I%20want%20to%20enquire%20about%20Under%20Sink%20Fighter%20UTC%20%28Up%20to%203000%20TDS%29" target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Enquire / Buy</a>
+          </li>
+        </ul>
+      <p class="all-link"><a class="btn btn--ghost" href="models.html">See all 17 models with prices <svg class="ic"><use href="#i-arrow"/></svg></a></p>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="sec" id="services">
+    <div class="wrap">
+      <div class="sec__head">
+        <h2>What we do</h2>
+        <p>For homes, offices, hotels and food businesses across Kottayam and Ernakulam districts.</p>
+      </div>
+      <ul class="svc">
+        <li><h3>Water purifiers</h3><p>Sales, installation and service of RO, UV, UF, alkaline and copper purifiers.</p></li>
+        <li><h3>Filtration vessels</h3><p>Iron removal, multi-media, carbon and softener vessels, sized from your water test.</p></li>
+        <li><h3>Solar</h3><p>Solar power plants, water heaters, street lights and solar pumps.</p></li>
+        <li><h3>Tank deep cleaning</h3><p>Drain, scrub, pressure-wash, sanitise and refill, in five steps.</p></li>
+        <li><h3>AMC &amp; repairs</h3><p>Annual maintenance contracts, repairs and filter cartridge replacement.</p></li>
+        <li><h3>Corporate &amp; food industry</h3><p>Filtration built to meet industry water standards.</p></li>
+        <li><h3>Drip irrigation</h3><p>Drip and sprinkler systems for gardens, terraces and farms.</p></li>
+        <li><h3>Automation</h3><p>Automatic pump controllers, tank level sensors and app control.</p></li>
+        <li><h3>House &amp; office cleaning</h3><p>Floors, bathrooms, kitchens, windows and post-construction clean-ups.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Why us -->
+  <section class="sec why" id="why-us">
+    <div class="wrap why__grid why__grid--solo">
+      <div>
+        <h2>Why choose New Max Aqua</h2>
+        <p class="why__sub">See the difference pure water makes.</p>
+        <ul class="ticks">
+          <li>Professional installation by a certified team</li>
+          <li>Reliable after-sales service and AMC support</li>
+          <li>Expert guidance based on water test results</li>
+          <li>Residential and commercial solutions from 2 locations</li>
+          <li>Easy EMI options with Bajaj Finserv</li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap">
+      <dl class="nums">
+        <div><dt>Purifier models</dt><dd>17</dd></div>
+        <div><dt>Vessel types</dt><dd>5</dd></div>
+        <div><dt>Branch locations</dt><dd>2</dd></div>
+        <div><dt>Savings with solar</dt><dd>80%</dd></div>
+      </dl>
+      <div class="work__row">
+        <figure><img src="assets/img/Aqua/Assets/water%20test.webp" alt="Testing TDS in a glass of water" loading="lazy" width="1536" height="1024"><figcaption>TDS test during a home visit.</figcaption></figure>
+        <figure><img src="assets/img/Aqua/Assets/cleaning.webp" alt="Cleaning a rooftop water tank" loading="lazy" width="1536" height="1024"><figcaption>Rooftop tank deep cleaning.</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vessels -->
+  <section class="sec" id="vessels">
+    <div class="wrap">
+      <div class="sec__head">
+        <h2>Whole-house filters</h2>
+        <p>For well and borewell water with iron, mud, smell or hardness. We size the vessel from your water test.</p>
+      </div>
+      <div class="vt">
+        <div class="vt__scroll">
+        <table>
+          <caption class="sr">Filtration vessel prices by type and size</caption>
+          <thead>
+            <tr>
+              <th scope="col" class="vt__corner"><b>Size</b><small>Capacity</small></th>
+              <th scope="col"><img src="assets/new/img/v-carbon.webp" alt="" loading="lazy" width="489" height="720"><b>Sediment</b><small>Traps sand, silt &amp; particles</small></th>
+              <th scope="col"><img src="assets/new/img/v-carbon.webp" alt="" loading="lazy" width="489" height="720"><b>Carbon</b><small>Removes chlorine &amp; odour</small></th>
+              <th scope="col"><img src="assets/new/img/v-iron.webp" alt="" loading="lazy" width="489" height="720"><b>Iron Removal</b><small>Stops stains &amp; corrosion</small></th>
+              <th scope="col"><img src="assets/new/img/v-multimedia.webp" alt="" loading="lazy" width="489" height="720"><b>Multimedia</b><small>Clear, sediment-free water</small></th>
+              <th scope="col"><img src="assets/new/img/v-softener.webp" alt="" loading="lazy" width="489" height="720"><b>Softener</b><small>Soft water, no scaling</small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row"><b>8×44</b><small>250–300 Ltr</small></th><td>₹ 12,000</td><td>₹ 13,000</td><td>₹ 15,000</td><td>₹ 15,000</td><td>₹ 15,000</td></tr>
+            <tr><th scope="row"><b>10×54</b><small>300–500 Ltr</small></th><td>₹ 14,000</td><td>₹ 16,000</td><td>₹ 16,000</td><td>₹ 18,000</td><td>₹ 18,000</td></tr>
+            <tr><th scope="row"><b>12×48</b><small>500–750 Ltr</small></th><td>₹ 16,000</td><td>₹ 18,000</td><td>₹ 18,000</td><td>₹ 19,000</td><td>₹ 19,000</td></tr>
+            <tr><th scope="row"><b>13×54</b><small>750–1000 Ltr</small></th><td>₹ 18,000</td><td>₹ 22,000</td><td>₹ 22,000</td><td>₹ 24,000</td><td>₹ 24,000</td></tr>
+            <tr><th scope="row"><b>14×65</b><small>1000–1500 Ltr</small></th><td>₹ 20,000</td><td>₹ 25,000</td><td>₹ 25,000</td><td>₹ 28,000</td><td>₹ 28,000</td></tr>
+          </tbody>
+          <tfoot>
+            <tr><th scope="row" class="vt__inc">Includes multi-port valve &amp; media</th><td><a class="vt__wa" href="https://wa.me/917306786132?text=Hi%2C%20I%20want%20to%20enquire%20about%20Sediment%20filtration%20vessel" target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Enquire</a></td><td><a class="vt__wa" href="https://wa.me/917306786132?text=Hi%2C%20I%20want%20to%20enquire%20about%20Carbon%20filtration%20vessel" target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Enquire</a></td><td><a class="vt__wa" href="https://wa.me/917306786132?text=Hi%2C%20I%20want%20to%20enquire%20about%20Iron%20Removal%20filtration%20vessel" target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Enquire</a></td><td><a class="vt__wa" href="https://wa.me/917306786132?text=Hi%2C%20I%20want%20to%20enquire%20about%20Multimedia%20filtration%20vessel" target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Enquire</a></td><td><a class="vt__wa" href="https://wa.me/917306786132?text=Hi%2C%20I%20want%20to%20enquire%20about%20Softener%20filtration%20vessel" target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Enquire</a></td></tr>
+          </tfoot>
+        </table>
         </div>
-        <div id="header-fixed-height"></div>
-        <div id="sticky-header" class="menu-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="mobile-nav-toggler"><i class="fas fa-bars"></i></div>
-                        <div class="menu-wrap">
-                            <nav class="menu-nav">
-                                <div class="logo d-none">
-                                    <a href="index.html" style="display: flex; align-items: center; gap: 10px;">
-                                        <img src="assets/img/Aqua/Assets/logonew/logo.png" alt="New Max Aqua">
-                                        <span
-                                            style="font-size: 20px; font-weight: 800; color: #ffffff; line-height: 1;">NEWMAX
-                                            AQUA</span>
-                                    </a>
-                                </div>
-                                <div class="navbar-wrap main-menu d-none d-lg-flex">
-                                    <ul class="navigation">
-                                        <li class="active"><a href="#home">Home</a></li>
-                                        <li><a href="#about">About Us</a></li>
-                                        <li><a href="#services">Services</a></li>
-                                        <li><a href="#vessels">Vessels</a></li>
-                                        <li><a href="#products">Purifiers</a></li>
-                                        <li><a href="#solar">Solar</a></li>
-                                        <li><a href="#faq">FAQ</a></li>
-                                        <li><a href="#contact">Contact</a></li>
-                                    </ul>
-                                </div>
-                                <div class="header-action d-none d-md-block">
-                                    <ul class="list-wrap" style="align-items: center; gap: 20px;">
-                                        <!-- <li><h4 style="margin: 0; font-weight: 700; color: #ffffff; font-size: 20px;">NEWMAX AQUA</h4></li> -->
-                                        <li class="header-btn"><a href="#contact" class="btn">Get a Free Quote</a></li>
-                                    </ul>
-                                </div>
-                            </nav>
-                        </div>
+        <p class="vt__note">EMI available through Bajaj Finserv. Custom sizes and multi-vessel setups are configured from your water test.</p>
+      </div>
+    </div>
+  </section>
 
-                        <!-- Mobile Menu  -->
-                        <div class="mobile-menu">
-                            <nav class="menu-box">
-                                <div class="close-btn"><i class="fas fa-times"></i></div>
-                                <div class="nav-logo">
-                                    <a href="index.html" style="display: flex; align-items: center; gap: 10px;">
-                                        <img src="assets/img/Aqua/Assets/logonew/logo.png" alt="New Max Aqua">
-                                        <span
-                                            style="font-size: 20px; font-weight: 800; color: var(--tg-primary-color); line-height: 1;">NEWMAX
-                                            AQUA</span>
-                                    </a>
-                                </div>
-                                <div class="menu-outer">
-                                    <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+  <!-- Green filters -->
+  <section class="sec green" id="green-filters">
+    <div class="wrap">
+      <div class="sec__head">
+        <h2>Premium green filters</h2>
+        <p>Our exclusive range of green filter vessels for homes, apartments and commercial sites. Ask us for sizes and prices.</p>
+      </div>
+      <ul class="green__grid">
+        <li class="g-big"><img src="assets/new/img/g1.webp" alt="Premium Green Water Filter Vessel - New Max Aqua" loading="lazy"><div class="g-cap"><b>Twin vessel set</b><span>Sediment + carbon for homes</span></div></li>
+        <li class=""><img src="assets/new/img/g3.webp" alt="Whole House Green Water Filter Vessel" loading="lazy"><div class="g-cap"><b>Whole-house filter</b><span>Every tap, one system</span></div></li>
+        <li class=""><img src="assets/new/img/g4.webp" alt="Chlorine and Iron Removal Green Water Filter Vessel" loading="lazy"><div class="g-cap"><b>Chlorine & iron removal</b><span>For well and municipal water</span></div></li>
+        <li class=""><img src="assets/new/img/g5.webp" alt="Commercial Green Water Filtration Vessel Systems" loading="lazy"><div class="g-cap"><b>Commercial systems</b><span>Hotels, hostels, offices</span></div></li>
+        <li class=""><img src="assets/new/img/g7.webp" alt="Advanced Green Water Filter for Pure Drinking Water" loading="lazy"><div class="g-cap"><b>Advanced drinking water</b><span>Multi-stage with skid frame</span></div></li>
+        <li class="g-wide"><img src="assets/new/img/g2.webp" alt="Multi-stage Green Water Filtration Vessel - Kottayam Ernakulam" loading="lazy"><div class="g-cap"><b>Multi-stage filtration</b><span>Apartments and villas</span></div></li>
+        <li class="g-wide"><img src="assets/new/img/g6.webp" alt="Eco-friendly Water Filter Vessel Kerala" loading="lazy"><div class="g-cap"><b>Eco-friendly vessel range</b><span>Built for Kerala water</span></div></li>
+      </ul>
+      <p class="all-link"><a class="btn btn--ghost" href="https://wa.me/917306786132?text=Hi%2C%20I%20want%20to%20enquire%20about%20the%20green%20filters" target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Ask about green filters</a></p>
+    </div>
+  </section>
 
-                                </div>
-                            </nav>
-                        </div>
-                        <div class="menu-backdrop"></div>
-                        <!-- End Mobile Menu -->
-
-                    </div>
-                </div>
-            </div>
+  <!-- Solar -->
+  <section class="sec solar" id="solar">
+    <div class="wrap solar__grid">
+      <img src="assets/img/Aqua/Assets/solar.webp" alt="Rooftop solar water heater with New Max Aqua branding" width="1536" height="1024" loading="lazy">
+      <div>
+        <h2>Solar</h2>
+        <p class="solar__lead">Cut your electricity bill by up to 80%.</p>
+        <p>Eco-friendly, cost-efficient solar systems that cut your electricity bills and your carbon footprint: solar power plants, water heaters, street lights and pumps, fully installed and maintained.</p>
+        <ul class="ticks">
+          <li>Save up to 80% on electricity bills</li>
+          <li>Government subsidy and tax benefits</li>
+          <li>Backup options for power even during outages</li>
+          <li>Silent, safe and hassle-free operation</li>
+          <li>Adds resale value to your property</li>
+        </ul>
+        <div class="solar__prods">
+          <figure><img src="assets/new/img/solar-heater.webp" alt="Solar water heater" loading="lazy"><figcaption>Solar water heater</figcaption></figure>
+          <figure><img src="assets/new/img/solar-battery.webp" alt="Solar battery backup" loading="lazy"><figcaption>Battery backup</figcaption></figure>
         </div>
-    </header>
-    <!-- header-area-end -->
+        <a class="btn" href="https://wa.me/917306786132?text=Hi%2C%20I%20would%20like%20a%20solar%20quote" target="_blank" rel="noopener">Ask for a solar quote <svg class="ic"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </section>
 
+  <!-- Tank cleaning -->
+  <section class="sec" id="tank-cleaning">
+    <div class="wrap">
+      <div class="sec__head">
+        <h2>Water tank deep cleaning</h2>
+        <p>Our 5-step cleaning process.</p>
+      </div>
+      <ol class="steps">
+        <li><h3>Inspection</h3><p>We assess the tank's condition and plan the safest cleaning approach.</p></li>
+        <li><h3>Draining</h3><p>The tank is fully drained to expose dirt, sludge and algae build-up.</p></li>
+        <li><h3>Deep cleaning</h3><p>Walls and floor are scrubbed and pressure-washed to remove every deposit.</p></li>
+        <li><h3>Sanitization</h3><p>Safe disinfectants eliminate bacteria and harmful contaminants.</p></li>
+        <li><h3>Refill &amp; final check</h3><p>The tank is refilled and checked so every stored drop stays hygienic.</p></li>
+      </ol>
+    </div>
+  </section>
 
-    <!-- main-area -->
-    <main>
+  <!-- About -->
+  <section class="sec about" id="about">
+    <div class="wrap about__grid">
+      <div>
+        <h2>About us</h2>
+        <p>New Max Aqua handles water and electrical work across Kerala: purifier installation and service, filtration vessels, solar systems and water tank deep cleaning, for homes and businesses.</p>
+        <p>Our mission is simple: sustainable solutions that make life cleaner, safer and more energy-efficient, delivered by a certified team with reliable after-sales support.</p>
+        <p>Head office in Kottayam, branch in Ernakulam. Both handle sales and after-sales service.</p>
+      </div>
+      <figure class="about__cert">
+        <img src="assets/img/Aqua/Assets/certificate.webp" alt="Waters Kerala certificate of membership issued to New Max Aqua" width="1509" height="1042" loading="lazy">
+        <figcaption>Membership certificate, Waters Kerala (Water Treatment Plant Entrepreneurs Registered Society).</figcaption>
+      </figure>
+    </div>
+  </section>
 
-        <!-- slider-area -->
-        <section id="home" class="slider-area">
-            <div class="slider-active">
-                <div class="single-slider slider-bg" data-background="assets/img/Aqua/Assets/home.webp">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-7">
-                                <div class="slider-content" data-animation="fadeInUp" data-delay=".1s">
-                                    <h4 class="sub-title">
-                                        <svg viewBox="0 0 41 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <use href="#aqua-sparkle" />
-                                        </svg>
-                                        Complete Water Solution &amp; Electricals
-                                    </h4>
-                                    <h1 class="title" data-animation="fadeInUp" data-delay=".25s">Pure Water, Perfect
-                                        Health for Your Family</h1>
-                                    <div class="slider-btn">
-                                        <a href="#services" class="btn" data-animation="fadeInLeft"
-                                            data-delay=".4s">Explore Services</a>
-                                        <a href="#contact" class="btn btn-two" data-animation="fadeInRight"
-                                            data-delay=".4s">Get Free Quote</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="single-slider slider-bg" data-background="assets/img/Aqua/Assets/water%20test.webp">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-7">
-                                <div class="slider-content" data-animation="fadeInUp" data-delay=".1s">
-                                    <h4 class="sub-title">
-                                        <svg viewBox="0 0 41 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <use href="#aqua-sparkle" />
-                                        </svg>
-                                        Water Purifiers &amp; Filtration
-                                    </h4>
-                                    <h2 class="title" data-animation="fadeInUp" data-delay=".25s">Expert Solutions Based
-                                        on Your Water Test</h2>
-                                    <div class="slider-btn">
-                                        <a href="#products" class="btn" data-animation="fadeInLeft"
-                                            data-delay=".4s">View Purifiers</a>
-                                        <a href="#contact" class="btn btn-two" data-animation="fadeInRight"
-                                            data-delay=".4s">Book Water Test</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="single-slider slider-bg" data-background="assets/img/Aqua/Assets/solar.webp">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-7">
-                                <div class="slider-content" data-animation="fadeInUp" data-delay=".1s">
-                                    <h4 class="sub-title">
-                                        <svg viewBox="0 0 41 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <use href="#aqua-sparkle" />
-                                        </svg>
-                                        Solar Energy Solutions
-                                    </h4>
-                                    <h2 class="title" data-animation="fadeInUp" data-delay=".25s">Save Energy &amp; Money
-                                        with Solar Power</h2>
-                                    <div class="slider-btn">
-                                        <a href="#solar" class="btn" data-animation="fadeInLeft" data-delay=".4s">Solar
-                                            Solutions</a>
-                                        <a href="#contact" class="btn btn-two" data-animation="fadeInRight"
-                                            data-delay=".4s">Get Free Quote</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="single-slider slider-bg slider-video">
-                    <video class="slider-video-bg" src="assets/img/Aqua/Assets/aquahero.mp4" muted playsinline
-                        preload="auto" poster="assets/img/Aqua/Assets/home.webp" aria-hidden="true"></video>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-7">
-                                <div class="slider-content" data-animation="fadeInUp" data-delay=".1s">
-                                    <h4 class="sub-title">
-                                        <svg viewBox="0 0 41 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <use href="#aqua-sparkle" />
-                                        </svg>
-                                        Trusted Across Kerala
-                                    </h4>
-                                    <h2 class="title" data-animation="fadeInUp" data-delay=".25s">Complete Water &amp;
-                                        Energy Solutions</h2>
-                                    <div class="slider-btn">
-                                        <a href="#services" class="btn" data-animation="fadeInLeft" data-delay=".4s">See
-                                            What We Do</a>
-                                        <a href="#contact" class="btn btn-two" data-animation="fadeInRight"
-                                            data-delay=".4s">Talk to an Expert</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- slider-area-end -->
+  <!-- FAQ -->
+  <section class="sec" id="faq">
+    <div class="wrap faq">
+      <h2>Questions</h2>
+      <div class="faq__list">
+        <details><summary>Which purifier is right for my home?</summary><p>It depends on your water source and quality. We test your water first, then recommend an RO, UV, UF, alkaline or copper purifier from our 17 models.</p></details>
+        <details><summary>How do you choose the filter vessel size?</summary><p>From your water test. Higher impurity loads need larger vessels. Common sizes run from 10×54 to 14×65 inches.</p></details>
+        <details><summary>Do you service what you install?</summary><p>Yes. We offer AMCs, repairs and cartridge replacement from both the Kottayam and Ernakulam offices.</p></details>
+        <details><summary>How much can I save with solar?</summary><p>Up to 80% on electricity bills. Panels last decades with little maintenance, and subsidies shorten the payback.</p></details>
+        <details><summary>Can I pay in EMI?</summary><p>Yes, through Bajaj Finserv on purifiers, vessels and solar systems.</p></details>
+      </div>
+    </div>
+  </section>
 
-        <!-- mobile-video-area (mobile only — desktop shows this clip as the 4th hero slide) -->
-        <section class="mobile-video-area">
-            <div class="container">
-                <div class="section-title text-center">
-                    <span class="sub-title">
-                        <svg viewBox="0 0 41 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <use href="#aqua-sparkle" />
-                        </svg>
-                        Trusted Across Kerala
-                    </span>
-                    <h2 class="title">Complete Water &amp; Energy Solutions</h2>
-                </div>
-                <div class="mobile-video-wrap">
-                    <video class="mobile-video" src="assets/img/Aqua/Assets/aquahero.mp4" autoplay muted loop
-                        playsinline preload="metadata" poster="assets/img/Aqua/Assets/home.webp"
-                        aria-label="New Max Aqua water solutions"></video>
-                </div>
-            </div>
-        </section>
-        <!-- mobile-video-area-end -->
+  <!-- Contact -->
+  <section class="sec contact" id="contact">
+    <div class="wrap contact__grid">
+      <div class="contact__info">
+        <h2>Book a free water test</h2>
+        <p>Type your question below and send it straight to our WhatsApp, or call either office.</p>
+        <dl>
+          <dt>Kottayam (head office)</dt><dd><a href="tel:+917306786132">+91 73067 86132</a></dd>
+          <dt>Ernakulam (branch)</dt><dd><a href="tel:+919747177283">+91 97471 77283</a> · <a href="https://maps.google.com/?q=NEW+MAX+AQUA+Complete+Water+Solution+%26+Electricals,+Chottanikkara,+Kerala" target="_blank" rel="noopener">Map</a></dd>
+          <dt>Email</dt><dd><a href="mailto:maxcompletewatersolution2020@gmail.com">maxcompletewatersolution2020@gmail.com</a></dd>
+        </dl>
+      </div>
 
+      <div class="form wa-box">
+        <form id="waForm" action="https://wa.me/917306786132" method="get" target="_blank">
+          <label for="waMsg"><span>Message us on WhatsApp</span></label>
+          <textarea id="waMsg" name="text" rows="6" required placeholder="Hi, I'd like a free water test. I'm in (your place) and we use (well / municipal) water."></textarea>
+          <button class="btn" type="submit"><svg class="ic"><use href="#i-wa"/></svg> Send on WhatsApp</button>
+          <p class="wa-box__note">Opens WhatsApp with your message to +91 73067 86132. We usually reply within the hour during working hours.</p>
+        </form>
+        <p class="form__emi"><img src="assets/img/Aqua/Assets/bajajfinserv.png" alt="Bajaj Finserv" width="96" height="26" loading="lazy"> EMI available</p>
+      </div>
+    </div>
+  </section>
+</main>
 
-        <!-- about-area -->
-        <section id="about" class="about-area has-animation pt-130 pb-130">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-7 col-md-10">
-                        <div class="about-img-wrap">
-                            <img src="assets/img/Aqua/Assets/installation.webp" class="wow fadeInLeft"
-                                data-wow-delay=".2s" alt="Water purifier installation by New Max Aqua technician">
-                            <img src="assets/img/Aqua/Assets/happydrinkingwater.webp" class="wow fadeInUp"
-                                data-wow-delay=".6s" alt="Happy family drinking pure water">
-                            <!-- <div class="year-experience-wrap">
-                                <span class="coutn odometer" data-count="16"></span>
-                                <p>Purifier <span>Models</span></p>
-                            </div> -->
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="about-content">
-                            <div class="section-title mb-75">
-                                <span class="sub-title">
-                                    <svg viewBox="0 0 41 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <use href="#aqua-sparkle" />
-                                    </svg>
-                                    About New Max Aqua
-                                </span>
-                                <h2 class="title">One Stop for Complete
-                                    <span>
-                                        Water
-                                        <svg viewBox="0 0 173 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2 22.9998C8.5 14.2152 90 -14 172 14.2148" stroke-width="3" />
-                                        </svg>
-                                    </span>
-                                    Solutions
-                                </h2>
-                            </div>
-                            <p>New Max Aqua provides complete water and electrical solutions across Kerala — water
-                                purifier installation and service, advanced filtration vessels, solar power systems, and
-                                professional water tank deep cleaning for both residential and commercial customers.</p>
-                            <p>Our mission is simple — sustainable solutions that make life cleaner, safer and more
-                                energy-efficient, delivered by a certified team with reliable after-sales support.</p>
-                            <div class="contact mb-20">
-                                <span class="icon"><i class="fas fa-award"></i></span>
-                                <a href="assets/img/Aqua/Assets/certificate.webp" class="popup-image">Waters Kerala
-                                    Certified Member</a>
-                            </div>
-                            <div class="contact mb-15">
-                                <span class="icon"><i class="fas fa-phone-alt"></i></span>
-                                <div><strong style="color: var(--tg-heading-color);">Kottayam Head Office:</strong> <a href="tel:+917306786132">+91 73067 86132</a></div>
-                            </div>
-                            <div class="contact">
-                                <span class="icon"><i class="fas fa-phone-alt"></i></span>
-                                <div><strong style="color: var(--tg-heading-color);">Ernakulam Branch:</strong> <a href="tel:+919747177283">+91 97471 77283</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- about-area-end -->
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr__cols">
+      <div>
+        <a class="ftr__brand" href="index.html"><img src="assets/img/Aqua/Assets/logonew/logo.png" alt="" width="40" height="40"> New Max Aqua</a>
+        <p>Complete Water Solution &amp; Electricals</p>
+        <h3>Contact us</h3>
+        <ul>
+          <li>Head office: Kottayam, Kerala</li>
+          <li>Branch: Ernakulam, Kerala</li>
+          <li>Kottayam: <a href="tel:+917306786132">+91 73067 86132</a></li>
+          <li>Ernakulam: <a href="tel:+919747177283">+91 97471 77283</a></li>
+          <li><a href="mailto:maxcompletewatersolution2020@gmail.com">maxcompletewatersolution2020@gmail.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Quick links</h3>
+        <ul>
+          <li><a href="index.html#about">About us</a></li>
+          <li><a href="index.html#services">Our services</a></li>
+          <li><a href="models.html">Water purifiers</a></li>
+          <li><a href="index.html#vessels">Filtration vessels</a></li>
+          <li><a href="index.html#solar">Solar solutions</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Our services</h3>
+        <ul>
+          <li>Purifier installation &amp; service</li>
+          <li>Water filtration vessels</li>
+          <li>Solar system installation</li>
+          <li>Tank deep cleaning</li>
+          <li>AMC &amp; maintenance</li>
+          <li>Cartridge replacement</li>
+          <li>Drip irrigation</li>
+          <li>Automation</li>
+          <li>House &amp; office cleaning</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Payment &amp; support</h3>
+        <p>Easy EMI options available on purifiers, vessels and solar systems.</p>
+        <p class="ftr__emi"><img src="assets/img/Aqua/Assets/bajajfinserv.png" alt="Bajaj Finserv" width="110" height="30" loading="lazy"></p>
+        <p><a class="ftr__wa" href="https://wa.me/917306786132" target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> WhatsApp us</a></p>
+      </div>
+    </div>
+    <div class="ftr__maps">
+      <figure><div class="map"><iframe title="New Max Aqua head office, Kottayam" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3559.8883148175287!2d76.54994440000002!3d9.6120833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOcKwMzYnNDMuNSJOIDc2wrAzMic1OS44IkU!5e1!3m2!1sen!2sin!4v1786191905575!5m2!1sen!2sin" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><figcaption><b>Head office · Kottayam</b> <a href="tel:+917306786132">+91 73067 86132</a></figcaption></figure>
+      <figure><div class="map"><iframe title="New Max Aqua branch, Ernakulam (Chottanikkara)" src="https://maps.google.com/maps?q=NEW+MAX+AQUA+Complete+Water+Solution+%26+Electricals,+Chottanikkara,+Kerala&amp;t=k&amp;z=17&amp;ie=UTF8&amp;iwloc=&amp;output=embed" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><figcaption><b>Branch · Ernakulam</b> <a href="tel:+919747177283">+91 97471 77283</a></figcaption></figure>
+    </div>
+    <div class="ftr__bar">
+      <p>© <span id="yr">2026</span> New Max Aqua. All rights reserved.</p>
+      <p>Together toward a cleaner, brighter future.</p>
+      <p class="ftr__credit">Designed by <a href="https://nyxt.in" target="_blank" rel="noopener">nyxt.in</a></p>
+    </div>
+  </div>
+</footer>
 
-        <!-- services-area -->
-        <section id="services" class="services-area has-animation">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-6 col-lg-6">
-                        <div class="section-title text-center mb-75">
-                            <span class="sub-title">
-                                <svg viewBox="0 0 41 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <use href="#aqua-sparkle" />
-                                </svg>
-                                Our Best Services
-                            </span>
-                            <h2 class="title">Complete Care for Water, Solar &amp;
-                                <span>Hygiene
-                                    <svg viewBox="0 0 173 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M2 22.9998C8.5 14.2152 90 -14 172 14.2148" stroke-width="3" />
-                                    </svg>
-                                </span>
-                            </h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="services-item-wrap">
-                    <div class="row">
-                        <div class="col-xl-4 col-md-6">
-                            <div class="services-item">
-                                <div class="services-bg-shape">
-                                    <svg viewBox="0 0 375 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <use href="#aqua-card-shape" />
-                                    </svg>
-                                </div>
-                                <div class="services-content">
-                                    <div class="services-content-top">
-                                        <div class="icon"><i class="fas fa-tint"></i></div>
-                                        <h2 class="title"><a href="#products">Water Purifiers</a></h2>
-                                    </div>
-                                    <p>Sales, installation and service of RO, UV, UF, Alkaline and Copper purifiers for
-                                        homes and businesses.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-md-6">
-                            <div class="services-item">
-                                <div class="services-bg-shape">
-                                    <svg viewBox="0 0 375 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <use href="#aqua-card-shape" />
-                                    </svg>
-                                </div>
-                                <div class="services-content">
-                                    <div class="services-content-top">
-                                        <div class="icon"><i class="fas fa-filter"></i></div>
-                                        <h2 class="title"><a href="#vessels">Filtration Vessels</a></h2>
-                                    </div>
-                                    <p>Iron removal, multi-media, carbon and softener vessels — sized to your water test
-                                        results.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-md-6">
-                            <div class="services-item">
-                                <div class="services-bg-shape">
-                                    <svg viewBox="0 0 375 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <use href="#aqua-card-shape" />
-                                    </svg>
-                                </div>
-                                <div class="services-content">
-                                    <div class="services-content-top">
-                                        <div class="icon"><i class="fas fa-solar-panel"></i></div>
-                                        <h2 class="title"><a href="#solar">Solar Solutions</a></h2>
-                                    </div>
-                                    <p>Solar power plants, water heaters, street lights and pump systems for homes and
-                                        industries.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-md-6">
-                            <div class="services-item">
-                                <div class="services-bg-shape">
-                                    <svg viewBox="0 0 375 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <use href="#aqua-card-shape" />
-                                    </svg>
-                                </div>
-                                <div class="services-content">
-                                    <div class="services-content-top">
-                                        <div class="icon"><i class="fas fa-hand-holding-water"></i></div>
-                                        <h2 class="title"><a href="#process">Tank Deep Cleaning</a></h2>
-                                    </div>
-                                    <p>Professional 5-step cleaning and sanitization that keeps every drop of stored
-                                        water safe.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-md-6">
-                            <div class="services-item">
-                                <div class="services-bg-shape">
-                                    <svg viewBox="0 0 375 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <use href="#aqua-card-shape" />
-                                    </svg>
-                                </div>
-                                <div class="services-content">
-                                    <div class="services-content-top">
-                                        <div class="icon"><i class="fas fa-tools"></i></div>
-                                        <h2 class="title"><a href="#contact">AMC &amp; Maintenance</a></h2>
-                                    </div>
-                                    <p>Annual maintenance contracts, repairs and filter cartridge replacement you can
-                                        rely on.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-md-6">
-                            <div class="services-item">
-                                <div class="services-bg-shape">
-                                    <svg viewBox="0 0 375 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <use href="#aqua-card-shape" />
-                                    </svg>
-                                </div>
-                                <div class="services-content">
-                                    <div class="services-content-top">
-                                        <div class="icon"><i class="fas fa-industry"></i></div>
-                                        <h2 class="title"><a href="#contact">Corporate &amp; Food Industry</a></h2>
-                                    </div>
-                                    <p>Custom filtration that ensures safe, great-tasting water and meets industry
-                                        standards.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-md-6">
-                            <div class="services-item">
-                                <div class="services-bg-shape">
-                                    <svg viewBox="0 0 375 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <use href="#aqua-card-shape" />
-                                    </svg>
-                                </div>
-                                <div class="services-content">
-                                    <div class="services-content-top">
-                                        <div class="icon"><i class="fas fa-seedling"></i></div>
-                                        <h2 class="title"><a href="#contact">Drip Irrigation</a></h2>
-                                    </div>
-                                    <p>Water-saving drip and sprinkler irrigation systems designed and installed for
-                                        gardens, terraces and farms.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-md-6">
-                            <div class="services-item">
-                                <div class="services-bg-shape">
-                                    <svg viewBox="0 0 375 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <use href="#aqua-card-shape" />
-                                    </svg>
-                                </div>
-                                <div class="services-content">
-                                    <div class="services-content-top">
-                                        <div class="icon"><i class="fas fa-microchip"></i></div>
-                                        <h2 class="title"><a href="#contact">Automation</a></h2>
-                                    </div>
-                                    <p>Smart home and water automation — automatic pump controllers, tank level sensors
-                                        and app-controlled systems.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-md-6">
-                            <div class="services-item">
-                                <div class="services-bg-shape">
-                                    <svg viewBox="0 0 375 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <use href="#aqua-card-shape" />
-                                    </svg>
-                                </div>
-                                <div class="services-content">
-                                    <div class="services-content-top">
-                                        <div class="icon"><i class="fas fa-broom"></i></div>
-                                        <h2 class="title"><a href="#contact">House &amp; Office Cleaning</a></h2>
-                                    </div>
-                                    <p>Deep cleaning for homes and offices — floors, bathrooms, kitchens, windows and
-                                        post-construction clean-ups.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- services-area-end -->
+<a class="wa-float" href="https://wa.me/917306786132" target="_blank" rel="noopener" aria-label="Chat with New Max Aqua on WhatsApp"><svg class="ic"><use href="#i-wa"/></svg></a>
 
-        <!-- why-choose-area -->
-        <section id="why-us" class="about-area why-choose-area has-animation pt-130 pb-130">
-            <div class="container">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-lg-5 col-md-10">
-                        <div class="about-content">
-                            <div class="section-title mb-75">
-                                <span class="sub-title">
-                                    <svg viewBox="0 0 41 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <use href="#aqua-sparkle" />
-                                    </svg>
-                                    Why Choose New Max Aqua
-                                </span>
-                                <h2 class="title">See the Difference
-                                    <span>
-                                        Pure
-                                        <svg viewBox="0 0 173 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2 22.9998C8.5 14.2152 90 -14 172 14.2148" stroke-width="3" />
-                                        </svg>
-                                    </span>
-                                    Water Makes
-                                </h2>
-                            </div>
-                            <ul class="aqua-list">
-                                <li><i class="fas fa-check-circle"></i> Professional installation by a certified team
-                                </li>
-                                <li><i class="fas fa-check-circle"></i> Reliable after-sales service and AMC support
-                                </li>
-                                <li><i class="fas fa-check-circle"></i> Expert guidance based on water test results</li>
-                                <li><i class="fas fa-check-circle"></i> Residential and commercial solutions from 2
-                                    locations</li>
-                                <li><i class="fas fa-check-circle"></i> Easy EMI options with Bajaj Finserv</li>
-                            </ul>
-                            <div class="slider-btn">
-                                <a href="#contact" class="btn">Book a Free Water Test</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-7 col-md-10">
-                        <div class="why-choose-img">
-                            <img src="assets/img/Aqua/Assets/beforeafter.webp" class="wow fadeInRight"
-                                data-wow-delay=".2s" alt="Water quality before and after New Max Aqua filtration">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- why-choose-area-end -->
-
-        <!-- vessels-area -->
-        <section id="vessels" class="team-area has-animation pt-125 pb-100">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-8">
-                        <div class="section-title mb-100">
-                            <span class="sub-title">
-                                <svg viewBox="0 0 41 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <use href="#aqua-sparkle" />
-                                </svg>
-                                Water Filtration Vessels
-                            </span>
-                            <h2 class="title">The Right Vessel for Every
-                                <span>Water
-                                    <svg viewBox="0 0 173 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M2 22.9998C8.5 14.2152 90 -14 172 14.2148" stroke-width="3" />
-                                    </svg>
-                                </span>
-                                Condition
-                            </h2>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-4">
-                        <div class="all-btn text-end mb-50">
-                            <a href="#contact" class="btn">Get Sizing Advice</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Desktop Comparison Table (Tablets & Desktops >= 768px) -->
-                <div id="vessels-desktop-wrap" class="vessels-desktop-view d-none d-md-block"></div>
-
-                <!-- Mobile Cards Layout (Smartphones < 768px) -->
-                <div id="vessels-mobile-wrap" class="vessels-mobile-view d-md-none"></div>
-            </div>
-        </section>
-        <!-- vessels-area-end -->
-
-        <!-- counter-area -->
-        <section class="counter-area">
-            <div class="container">
-                <div class="counter-inner jarallax"
-                    data-background="assets/img/Aqua/Assets/hugegreenfilters/ChatGPT%20Image%20Jul%2011,%202026,%2012_30_10%20PM.png">
-                    <div class="row">
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="counter-item">
-                                <div class="icon"><i class="fas fa-faucet"></i></div>
-                                <div class="content">
-                                    <h2 class="count"><span class="odometer" data-count="17"></span>+</h2>
-                                    <p>Purifier Models</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="counter-item">
-                                <div class="icon"><i class="fas fa-filter"></i></div>
-                                <div class="content">
-                                    <h2 class="count"><span class="odometer" data-count="4"></span></h2>
-                                    <p>Vessel Types</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="counter-item">
-                                <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
-                                <div class="content">
-                                    <h2 class="count"><span class="odometer" data-count="2"></span></h2>
-                                    <p>Branch Locations</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="counter-item">
-                                <div class="icon"><i class="fas fa-solar-panel"></i></div>
-                                <div class="content">
-                                    <h2 class="count"><span class="odometer" data-count="80"></span>%</h2>
-                                    <p>Savings with Solar</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- counter-area-end -->
-
-        <!-- products-area -->
-        <section id="products" class="project-area has-animation project-bg">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="section-title text-center white-title mb-50">
-                            <span class="sub-title">
-                                <svg viewBox="0 0 41 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <use href="#aqua-sparkle" />
-                                </svg>
-                                Our Water Purifiers · Starting from ₹ 2,500
-                            </span>
-                            <h2 class="title">Pure Water. Perfect
-                                <span>Health.
-                                    <svg viewBox="0 0 173 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M2 22.9998C8.5 14.2152 90 -14 172 14.2148" stroke-width="3" />
-                                    </svg>
-                                </span>
-                            </h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="purifier-grid-wrap">
-                    <div class="row g-2 g-md-4" id="purifiers-grid">
-                        <!-- Product 1: Water Purifier System -->
-                        <div class="col-6 col-md-6 col-lg-4 purifier-item">
-                            <div class="project-item product-card h-100 d-flex flex-column">
-                                <div class="project-thumb">
-                                    <a href="#contact"><img
-                                            src="assets/img/Aqua/Assets/product/water%20purifier%20system.png"
-                                            alt="Water Purifier System"
-                                            loading="lazy"
-                                            decoding="async"></a>
-                                </div>
-                                <div class="project-content d-flex flex-column flex-grow-1">
-                                    <h2 class="title"><a href="#contact">Water Purifier System</a></h2>
-                                    <span>Starting from ₹ 2,500</span>
-                                
-                                    <a href="https://wa.me/917306786132?text=Hi%2C%20I%20want%20to%20enquire%20about%20Water%20Purifier%20System" class="btn purifier-buy-btn" target="_blank"><i class="fab fa-whatsapp"></i> Enquiry / Buy</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Product 2: Dolphin Gold -->
-                        <div class="col-6 col-md-6 col-lg-4 purifier-item">
-                            <div class="project-item product-card h-100 d-flex flex-column">
-                                <div class="project-thumb">
-                                    <a href="#contact"><img
-                                            src="assets/img/Aqua/Assets/product/dolphin%20gold.png"
-                                            alt="Dolphin Gold water purifier"
-                                            loading="lazy"
-                                            decoding="async"></a>
-                                </div>
-                                <div class="project-content d-flex flex-column flex-grow-1">
-                                    <h2 class="title"><a href="#contact">Dolphin Gold</a></h2>
-                                    <span>₹ 9,000</span>
-                                
-                                    <a href="https://wa.me/917306786132?text=Hi%2C%20I%20want%20to%20enquire%20about%20Dolphin%20Gold" class="btn purifier-buy-btn" target="_blank"><i class="fab fa-whatsapp"></i> Enquiry / Buy</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Product 3: Aqua Mars -->
-                        <div class="col-6 col-md-6 col-lg-4 purifier-item">
-                            <div class="project-item product-card h-100 d-flex flex-column">
-                                <div class="project-thumb">
-                                    <a href="#contact"><img
-                                            src="assets/img/Aqua/Assets/product/Aqua%20Mars.png"
-                                            alt="Aqua Mars water purifier"
-                                            loading="lazy"
-                                            decoding="async"></a>
-                                </div>
-                                <div class="project-content d-flex flex-column flex-grow-1">
-                                    <h2 class="title"><a href="#contact">Aqua Mars</a></h2>
-                                    <span>₹ 10,000 · Premium Grey</span>
-                                
-                                    <a href="https://wa.me/917306786132?text=Hi%2C%20I%20want%20to%20enquire%20about%20Aqua%20Mars" class="btn purifier-buy-btn" target="_blank"><i class="fab fa-whatsapp"></i> Enquiry / Buy</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Product 4: P&A Fighter 1.0 -->
-                        <div class="col-6 col-md-6 col-lg-4 purifier-item">
-                            <div class="project-item product-card h-100 d-flex flex-column">
-                                <div class="project-thumb">
-                                    <a href="#contact"><img
-                                            src="assets/img/Aqua/Assets/product/P%26A%20FIGHTER-1.png"
-                                            alt="P&amp;A Fighter 1.0 water purifier"
-                                            loading="lazy"
-                                            decoding="async"></a>
-                                </div>
-                                <div class="project-content d-flex flex-column flex-grow-1">
-                                    <h2 class="title"><a href="#contact">P&amp;A Fighter 1.0</a></h2>
-                                    <span>₹ 12,000</span>
-                                
-                                    <a href="https://wa.me/917306786132?text=Hi%2C%20I%20want%20to%20enquire%20about%20P%26amp%3BA%20Fighter%201.0" class="btn purifier-buy-btn" target="_blank"><i class="fab fa-whatsapp"></i> Enquiry / Buy</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Product 5: Flonix Gold -->
-                        <div class="col-6 col-md-6 col-lg-4 purifier-item">
-                            <div class="project-item product-card h-100 d-flex flex-column">
-                                <div class="project-thumb">
-                                    <a href="#contact"><img
-                                            src="assets/img/Aqua/Assets/product/Flonix%20gold.png"
-                                            alt="Flonix Gold water purifier"
-                                            loading="lazy"
-                                            decoding="async"></a>
-                                </div>
-                                <div class="project-content d-flex flex-column flex-grow-1">
-                                    <h2 class="title"><a href="#contact">Flonix Gold</a></h2>
-                                    <span>₹ 12,500</span>
-                                
-                                    <a href="https://wa.me/917306786132?text=Hi%2C%20I%20want%20to%20enquire%20about%20Flonix%20Gold" class="btn purifier-buy-btn" target="_blank"><i class="fab fa-whatsapp"></i> Enquiry / Buy</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Product 6: Aqua Jade -->
-                        <div class="col-6 col-md-6 col-lg-4 purifier-item">
-                            <div class="project-item product-card h-100 d-flex flex-column">
-                                <div class="project-thumb">
-                                    <a href="#contact"><img
-                                            src="assets/img/Aqua/Assets/product/AQUA%20JADE(RO%2BUV%2BCOPPER).png"
-                                            alt="Aqua Jade RO UV Copper water purifier"
-                                            loading="lazy"
-                                            decoding="async"></a>
-                                </div>
-                                <div class="project-content d-flex flex-column flex-grow-1">
-                                    <h2 class="title"><a href="#contact">Aqua Jade</a></h2>
-                                    <span>₹ 12,750 · RO + UV + Copper</span>
-                                
-                                    <a href="https://wa.me/917306786132?text=Hi%2C%20I%20want%20to%20enquire%20about%20Aqua%20Jade" class="btn purifier-buy-btn" target="_blank"><i class="fab fa-whatsapp"></i> Enquiry / Buy</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Product 7: TX One Titanium -->
-                        <div class="col-6 col-md-6 col-lg-4 purifier-item purifier-item-extra" style="display: none;">
-                            <div class="project-item product-card h-100 d-flex flex-column">
-                                <div class="project-thumb">
-                                    <a href="#contact"><img
-                                            src="assets/img/Aqua/Assets/product/TX%20ONE%20TITANIUM.png"
-                                            alt="TX One Titanium water purifier"
-                                            loading="lazy"
-                                            decoding="async"></a>
-                                </div>
-                                <div class="project-content d-flex flex-column flex-grow-1">
-                                    <h2 class="title"><a href="#contact">TX One Titanium</a></h2>
-                                    <span>₹ 13,750 · White Gold</span>
-                                
-                                    <a href="https://wa.me/917306786132?text=Hi%2C%20I%20want%20to%20enquire%20about%20TX%20One%20Titanium" class="btn purifier-buy-btn" target="_blank"><i class="fab fa-whatsapp"></i> Enquiry / Buy</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Product 8: Flonix RO + UV -->
-                        <div class="col-6 col-md-6 col-lg-4 purifier-item purifier-item-extra" style="display: none;">
-                            <div class="project-item product-card h-100 d-flex flex-column">
-                                <div class="project-thumb">
-                                    <a href="#contact"><img
-                                            src="assets/img/Aqua/Assets/product/flonix%20ro%2Buv.png"
-                                            alt="Flonix RO + UV water purifier"
-                                            loading="lazy"
-                                            decoding="async"></a>
-                                </div>
-                                <div class="project-content d-flex flex-column flex-grow-1">
-                                    <h2 class="title"><a href="#contact">Flonix RO + UV</a></h2>
-                                    <span>₹ 14,000</span>
-                                
-                                    <a href="https://wa.me/917306786132?text=Hi%2C%20I%20want%20to%20enquire%20about%20Flonix%20RO%20%2B%20UV" class="btn purifier-buy-btn" target="_blank"><i class="fab fa-whatsapp"></i> Enquiry / Buy</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Product 9: Aqua 2090 -->
-                        <div class="col-6 col-md-6 col-lg-4 purifier-item purifier-item-extra" style="display: none;">
-                            <div class="project-item product-card h-100 d-flex flex-column">
-                                <div class="project-thumb">
-                                    <a href="#contact"><img
-                                            src="assets/img/Aqua/Assets/product/Aqua%202090.png"
-                                            alt="Aqua 2090 Mirror Black water purifier"
-                                            loading="lazy"
-                                            decoding="async"></a>
-                                </div>
-                                <div class="project-content d-flex flex-column flex-grow-1">
-                                    <h2 class="title"><a href="#contact">Aqua 2090</a></h2>
-                                    <span>₹ 14,000 · Mirror Black</span>
-                                
-                                    <a href="https://wa.me/917306786132?text=Hi%2C%20I%20want%20to%20enquire%20about%20Aqua%202090" class="btn purifier-buy-btn" target="_blank"><i class="fab fa-whatsapp"></i> Enquiry / Buy</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Product 10: Aqua 2090 -->
-                        <div class="col-6 col-md-6 col-lg-4 purifier-item purifier-item-extra" style="display: none;">
-                            <div class="project-item product-card h-100 d-flex flex-column">
-                                <div class="project-thumb">
-                                    <a href="#contact"><img
-                                            src="assets/img/Aqua/Assets/product/Aqua%202090%20(2).png"
-                                            alt="Aqua 2090 Aqua Green water purifier"
-                                            loading="lazy"
-                                            decoding="async"></a>
-                                </div>
-                                <div class="project-content d-flex flex-column flex-grow-1">
-                                    <h2 class="title"><a href="#contact">Aqua 2090</a></h2>
-                                    <span>₹ 14,000 · Aqua Green</span>
-                                
-                                    <a href="https://wa.me/917306786132?text=Hi%2C%20I%20want%20to%20enquire%20about%20Aqua%202090" class="btn purifier-buy-btn" target="_blank"><i class="fab fa-whatsapp"></i> Enquiry / Buy</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Product 11: Flonix LED -->
-                        <div class="col-6 col-md-6 col-lg-4 purifier-item purifier-item-extra" style="display: none;">
-                            <div class="project-item product-card h-100 d-flex flex-column">
-                                <div class="project-thumb">
-                                    <a href="#contact"><img
-                                            src="assets/img/Aqua/Assets/product/flonix%20led.png"
-                                            alt="Flonix LED water purifier"
-                                            loading="lazy"
-                                            decoding="async"></a>
-                                </div>
-                                <div class="project-content d-flex flex-column flex-grow-1">
-                                    <h2 class="title"><a href="#contact">Flonix LED</a></h2>
-                                    <span>₹ 14,000</span>
-                                
-                                    <a href="https://wa.me/917306786132?text=Hi%2C%20I%20want%20to%20enquire%20about%20Flonix%20LED" class="btn purifier-buy-btn" target="_blank"><i class="fab fa-whatsapp"></i> Enquiry / Buy</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Product 12: P&A Fighter 2.0 -->
-                        <div class="col-6 col-md-6 col-lg-4 purifier-item purifier-item-extra" style="display: none;">
-                            <div class="project-item product-card h-100 d-flex flex-column">
-                                <div class="project-thumb">
-                                    <a href="#contact"><img
-                                            src="assets/img/Aqua/Assets/product/P%26A%20FIGHTER-2.png"
-                                            alt="P&amp;A Fighter 2.0 water purifier"
-                                            loading="lazy"
-                                            decoding="async"></a>
-                                </div>
-                                <div class="project-content d-flex flex-column flex-grow-1">
-                                    <h2 class="title"><a href="#contact">P&amp;A Fighter 2.0</a></h2>
-                                    <span>₹ 14,000</span>
-                                
-                                    <a href="https://wa.me/917306786132?text=Hi%2C%20I%20want%20to%20enquire%20about%20P%26amp%3BA%20Fighter%202.0" class="btn purifier-buy-btn" target="_blank"><i class="fab fa-whatsapp"></i> Enquiry / Buy</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Product 13: Aqua 9090 -->
-                        <div class="col-6 col-md-6 col-lg-4 purifier-item purifier-item-extra" style="display: none;">
-                            <div class="project-item product-card h-100 d-flex flex-column">
-                                <div class="project-thumb">
-                                    <a href="#contact"><img
-                                            src="assets/img/Aqua/Assets/product/AQUA%209090%20WHITE.png"
-                                            alt="Aqua 9090 White water purifier"
-                                            loading="lazy"
-                                            decoding="async"></a>
-                                </div>
-                                <div class="project-content d-flex flex-column flex-grow-1">
-                                    <h2 class="title"><a href="#contact">Aqua 9090</a></h2>
-                                    <span>₹ 14,500 · White</span>
-                                
-                                    <a href="https://wa.me/917306786132?text=Hi%2C%20I%20want%20to%20enquire%20about%20Aqua%209090" class="btn purifier-buy-btn" target="_blank"><i class="fab fa-whatsapp"></i> Enquiry / Buy</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Product 14: Aqua 9090 -->
-                        <div class="col-6 col-md-6 col-lg-4 purifier-item purifier-item-extra" style="display: none;">
-                            <div class="project-item product-card h-100 d-flex flex-column">
-                                <div class="project-thumb">
-                                    <a href="#contact"><img
-                                            src="assets/img/Aqua/Assets/product/AQUA%209090%20BLACK.png"
-                                            alt="Aqua 9090 Black water purifier"
-                                            loading="lazy"
-                                            decoding="async"></a>
-                                </div>
-                                <div class="project-content d-flex flex-column flex-grow-1">
-                                    <h2 class="title"><a href="#contact">Aqua 9090</a></h2>
-                                    <span>₹ 14,500 · Black</span>
-                                
-                                    <a href="https://wa.me/917306786132?text=Hi%2C%20I%20want%20to%20enquire%20about%20Aqua%209090" class="btn purifier-buy-btn" target="_blank"><i class="fab fa-whatsapp"></i> Enquiry / Buy</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Product 15: Flonix LED -->
-                        <div class="col-6 col-md-6 col-lg-4 purifier-item purifier-item-extra" style="display: none;">
-                            <div class="project-item product-card h-100 d-flex flex-column">
-                                <div class="project-thumb">
-                                    <a href="#contact"><img
-                                            src="assets/img/Aqua/Assets/product/Flonix%20led%20cobalt%20blue.png"
-                                            alt="Flonix LED Cobalt Blue water purifier"
-                                            loading="lazy"
-                                            decoding="async"></a>
-                                </div>
-                                <div class="project-content d-flex flex-column flex-grow-1">
-                                    <h2 class="title"><a href="#contact">Flonix LED</a></h2>
-                                    <span>₹ 14,500 · Cobalt Blue</span>
-                                
-                                    <a href="https://wa.me/917306786132?text=Hi%2C%20I%20want%20to%20enquire%20about%20Flonix%20LED" class="btn purifier-buy-btn" target="_blank"><i class="fab fa-whatsapp"></i> Enquiry / Buy</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Product 16: P&A Fighter 3.0 -->
-                        <div class="col-6 col-md-6 col-lg-4 purifier-item purifier-item-extra" style="display: none;">
-                            <div class="project-item product-card h-100 d-flex flex-column">
-                                <div class="project-thumb">
-                                    <a href="#contact"><img
-                                            src="assets/img/Aqua/Assets/product/P%26A%20FIGHTER%20-3.png"
-                                            alt="P&amp;A Fighter 3.0 water purifier"
-                                            loading="lazy"
-                                            decoding="async"></a>
-                                </div>
-                                <div class="project-content d-flex flex-column flex-grow-1">
-                                    <h2 class="title"><a href="#contact">P&amp;A Fighter 3.0</a></h2>
-                                    <span>₹ 16,000</span>
-                                
-                                    <a href="https://wa.me/917306786132?text=Hi%2C%20I%20want%20to%20enquire%20about%20P%26amp%3BA%20Fighter%203.0" class="btn purifier-buy-btn" target="_blank"><i class="fab fa-whatsapp"></i> Enquiry / Buy</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Product 17: Under Sink Fighter UTC -->
-                        <div class="col-6 col-md-6 col-lg-4 purifier-item purifier-item-extra" style="display: none;">
-                            <div class="project-item product-card h-100 d-flex flex-column">
-                                <div class="project-thumb">
-                                    <a href="#contact"><img
-                                            src="assets/img/Aqua/Assets/product/UNDER%20SINK%20FIGHTER%20UTC.png"
-                                            alt="Under Sink Fighter UTC water purifier"
-                                            loading="lazy"
-                                            decoding="async"></a>
-                                </div>
-                                <div class="project-content d-flex flex-column flex-grow-1">
-                                    <h2 class="title"><a href="#contact">Under Sink Fighter UTC</a></h2>
-                                    <span>₹ 25,000 · Up to 3000 TDS</span>
-                                
-                                    <a href="https://wa.me/917306786132?text=Hi%2C%20I%20want%20to%20enquire%20about%20Under%20Sink%20Fighter%20UTC" class="btn purifier-buy-btn" target="_blank"><i class="fab fa-whatsapp"></i> Enquiry / Buy</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- View All Products Button & Note -->
-                    <div class="purifier-view-all-wrap text-center mt-30">
-                        <button type="button" id="btn-toggle-purifiers" class="btn btn-toggle-purifiers" aria-expanded="false">
-                            <span class="btn-text">View All Products (17 Models)</span>
-                            <i class="fas fa-chevron-down ms-2"></i>
-                        </button>
-                        <p class="price-note text-center mt-3">
-                            * Prices starting from ₹ 2,500. Prices are indicative and may vary depending on brand, capacity and features. Storage capacity ranges between 9 and 10 litres.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- products-area-end -->
-
-        <!-- solar-area -->
-        <section id="solar" class="about-area has-animation pt-130 pb-130">
-            <div class="container">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-lg-5 col-md-10 order-2 order-lg-0">
-                        <div class="about-content">
-                            <div class="section-title mb-75">
-                                <span class="sub-title">
-                                    <svg viewBox="0 0 41 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <use href="#aqua-sparkle" />
-                                    </svg>
-                                    Solar Energy Solutions
-                                </span>
-                                <h2 class="title">Power Your Future with the
-                                    <span>
-                                        Sun
-                                        <svg viewBox="0 0 173 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2 22.9998C8.5 14.2152 90 -14 172 14.2148" stroke-width="3" />
-                                        </svg>
-                                    </span>
-                                </h2>
-                            </div>
-                            <p>Eco-friendly, cost-efficient solar systems that cut your electricity bills and your
-                                carbon footprint — solar power plants, water heaters, street lights and pumps, fully
-                                installed and maintained.</p>
-                            <ul class="aqua-list">
-                                <li><i class="fas fa-check-circle"></i> Save up to 80% on electricity bills</li>
-                                <li><i class="fas fa-check-circle"></i> Government subsidy and tax benefits</li>
-                                <li><i class="fas fa-check-circle"></i> Backup options for power even during outages
-                                </li>
-                                <li><i class="fas fa-check-circle"></i> Silent, safe and hassle-free operation</li>
-                                <li><i class="fas fa-check-circle"></i> Adds resale value to your property</li>
-                            </ul>
-                            <div class="slider-btn">
-                                <a href="#contact" class="btn">Get Solar Quote</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-7 col-md-10">
-                        <div class="solar-img-wrap">
-                            <img src="assets/img/Aqua/Assets/solar/solar.png" class="wow fadeInRight"
-                                data-wow-delay=".2s" alt="Rooftop solar panel installation">
-                            <img src="assets/img/Aqua/Assets/solar/battery.png" class="wow fadeInUp"
-                                data-wow-delay=".6s" alt="Solar battery backup system">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- solar-area-end -->
-
-        <!-- green-filters-area -->
-        <section id="green-filters" class="team-area has-animation pt-125 pb-100"
-            style="background: var(--tg-section-background);">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-12">
-                        <div class="section-title text-center mb-90">
-                            <span class="sub-title">
-                                <svg viewBox="0 0 41 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <use href="#aqua-sparkle" />
-                                </svg>
-                                Premium Green Filters
-                            </span>
-                            <h2 class="title">Our Exclusive Range of
-                                <span>Green Filters
-                                    <svg viewBox="0 0 173 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M2 22.9998C8.5 14.2152 90 -14 172 14.2148" stroke-width="3" />
-                                    </svg>
-                                </span>
-                            </h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="team-item green-filter-card">
-                            <div class="team-thumb">
-                                <img src="assets/img/Aqua/Assets/hugegreenfilters/0316fb6b-3e46-441b-9177-b34e5fcbe388-removebg-preview.png"
-                                    alt="Premium Green Water Filter Vessel - New Max Aqua">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="team-item green-filter-card">
-                            <div class="team-thumb">
-                                <img src="assets/img/Aqua/Assets/hugegreenfilters/ChatGPT%20Image%20Jul%2011,%202026,%2012_30_10%20PM.png"
-                                    alt="Multi-stage Green Water Filtration Vessel - Kottayam Ernakulam">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="team-item green-filter-card">
-                            <div class="team-thumb">
-                                <img src="assets/img/Aqua/Assets/hugegreenfilters/ChatGPT%20Image%20Jul%2011,%202026,%2012_30_15%20PM.png"
-                                    alt="Whole House Green Water Filter Vessel">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="team-item green-filter-card">
-                            <div class="team-thumb">
-                                <img src="assets/img/Aqua/Assets/hugegreenfilters/ChatGPT%20Image%20Jul%2011,%202026,%2012_30_25%20PM.png"
-                                    alt="Chlorine and Iron Removal Green Water Filter Vessel">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="team-item green-filter-card">
-                            <div class="team-thumb">
-                                <img src="assets/img/Aqua/Assets/hugegreenfilters/ChatGPT%20Image%20Jul%2011,%202026,%2012_30_33%20PM.png"
-                                    alt="Commercial Green Water Filtration Vessel Systems">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="team-item green-filter-card">
-                            <div class="team-thumb">
-                                <img src="assets/img/Aqua/Assets/hugegreenfilters/Gemini_Generated_Image_hyk0chyk0chyk0ch-removebg-preview.png"
-                                    alt="Eco-friendly Water Filter Vessel Kerala">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="team-item green-filter-card">
-                            <div class="team-thumb">
-                                <img src="assets/img/Aqua/Assets/hugegreenfilters/b055a5cc-e7e0-4d0e-a0eb-380f209e7fbf-removebg-preview.png"
-                                    alt="Advanced Green Water Filter for Pure Drinking Water">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- green-filters-area-end -->
-
-        <!-- process-area -->
-        <section id="process" class="work-area why-choose-area has-animation pt-125 pb-95">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="section-title text-center mb-90">
-                            <span class="sub-title">
-                                <svg viewBox="0 0 41 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <use href="#aqua-sparkle" />
-                                </svg>
-                                Water Tank Deep Cleaning
-                            </span>
-                            <h2 class="title">Our 5-Step
-                                <span>Cleaning
-                                    <svg viewBox="0 0 173 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M2 22.9998C8.5 14.2152 90 -14 172 14.2148" stroke-width="3" />
-                                    </svg>
-                                </span>
-                                Process
-                            </h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="work-item-wrap">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-4 col-md-6 col-sm-8">
-                            <div class="work-item wow fadeInUp" data-wow-delay=".2s">
-                                <div class="work-icon">
-                                    <i class="fas fa-search"></i>
-                                    <span class="number">01</span>
-                                </div>
-                                <div class="work-content">
-                                    <h2 class="title">Inspection</h2>
-                                    <p>We assess the tank's condition and plan the safest cleaning approach.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-8">
-                            <div class="work-item wow fadeInUp" data-wow-delay=".3s">
-                                <div class="work-icon">
-                                    <i class="fas fa-tint-slash"></i>
-                                    <span class="number">02</span>
-                                </div>
-                                <div class="work-content">
-                                    <h2 class="title">Draining</h2>
-                                    <p>The tank is fully drained to expose dirt, sludge and algae build-up.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-8">
-                            <div class="work-item wow fadeInUp" data-wow-delay=".4s">
-                                <div class="work-icon">
-                                    <i class="fas fa-broom"></i>
-                                    <span class="number">03</span>
-                                </div>
-                                <div class="work-content">
-                                    <h2 class="title">Deep Cleaning</h2>
-                                    <p>Walls and floor are scrubbed and pressure-washed to remove every deposit.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-8">
-                            <div class="work-item wow fadeInUp" data-wow-delay=".5s">
-                                <div class="work-icon">
-                                    <i class="fas fa-spray-can"></i>
-                                    <span class="number">04</span>
-                                </div>
-                                <div class="work-content">
-                                    <h2 class="title">Sanitization</h2>
-                                    <p>Safe disinfectants eliminate bacteria and harmful contaminants.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-8">
-                            <div class="work-item wow fadeInUp" data-wow-delay=".6s">
-                                <div class="work-icon">
-                                    <i class="fas fa-clipboard-check"></i>
-                                    <span class="number">05</span>
-                                </div>
-                                <div class="work-content">
-                                    <h2 class="title">Refill &amp; Final Check</h2>
-                                    <p>The tank is refilled and checked so every stored drop stays hygienic.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- process-area-end -->
-
-        <!-- faq-area -->
-        <section id="faq" class="faq-area has-animation pt-125 pb-130">
-            <div class="container">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-lg-6 col-md-10">
-                        <div class="faq-content">
-                            <div class="section-title mb-40">
-                                <span class="sub-title">
-                                    <svg viewBox="0 0 41 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <use href="#aqua-sparkle" />
-                                    </svg>
-                                    Our Company FAQs
-                                </span>
-                                <h2 class="title">Frequently Asked
-                                    <span>Questions
-                                        <svg viewBox="0 0 173 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2 22.9998C8.5 14.2152 90 -14 172 14.2148" stroke-width="3" />
-                                        </svg>
-                                    </span>
-                                </h2>
-                            </div>
-                            <div class="accordion" id="accordionExample">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseOne" aria-expanded="true"
-                                            aria-controls="collapseOne">
-                                            Which water purifier is right for my home?
-                                        </button>
-                                    </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse show"
-                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <p>It depends on your water source and quality. We test your water first,
-                                                then recommend the right RO, UV, UF, Alkaline or Copper purifier from
-                                                our range of 17 models.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingTwo">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                            aria-expanded="false" aria-controls="collapseTwo">
-                                            How do you choose the right filtration vessel size?
-                                        </button>
-                                    </h2>
-                                    <div id="collapseTwo" class="accordion-collapse collapse"
-                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <p>Vessel size is selected based on your water test results — larger vessels
-                                                handle higher impurity loads. Common sizes range from 10×54 up to 14×65
-                                                inches for long-lasting, stable performance.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingThree">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                            aria-expanded="false" aria-controls="collapseThree">
-                                            Do you provide service after installation?
-                                        </button>
-                                    </h2>
-                                    <div id="collapseThree" class="accordion-collapse collapse"
-                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <p>Yes — we offer annual maintenance contracts (AMC), repairs and filter
-                                                cartridge replacement, with reliable support from our Kottayam and
-                                                Ernakulam offices.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingFour">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
-                                            aria-expanded="false" aria-controls="collapseFour">
-                                            How much can I save by switching to solar?
-                                        </button>
-                                    </h2>
-                                    <div id="collapseFour" class="accordion-collapse collapse"
-                                        aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <p>You can save up to 80% on electricity bills. Panels last for decades with
-                                                minimal maintenance, and government subsidies and tax benefits speed up
-                                                your return on investment.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingFive">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseFive"
-                                            aria-expanded="false" aria-controls="collapseFive">
-                                            Can I pay in EMI?
-                                        </button>
-                                    </h2>
-                                    <div id="collapseFive" class="accordion-collapse collapse"
-                                        aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <p>Yes — easy EMI options are available through Bajaj Finserv on purifiers,
-                                                vessels and solar systems. Ask us for details when you request a quote.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-10">
-                        <div class="faq-img aqua-faq-img">
-                            <img src="assets/img/Aqua/Assets/solar.webp" data-aos="fade-left"
-                                alt="New Max Aqua Solar Solution">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- faq-area-end -->
-
-        <!-- contact-area -->
-        <section id="contact" class="contact-area contact-bg has-animation jarallax"
-            data-background="assets/img/Aqua/Assets/otherpictures/ChatGPT%20Image%20Jul%2011,%202026,%2012_30_15%20PM.png">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="contact-inner">
-                            <div class="section-title mb-65">
-                                <span class="sub-title">
-                                    <svg viewBox="0 0 41 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <use href="#aqua-sparkle" />
-                                    </svg>
-                                    Get a Free Estimate
-                                </span>
-                                <h2 class="title">Book Your Free
-                                    <span>Water
-                                        <svg viewBox="0 0 173 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2 22.9998C8.5 14.2152 90 -14 172 14.2148" stroke-width="3" />
-                                        </svg>
-                                    </span>
-                                    Test
-                                </h2>
-                            </div>
-                            <script type="text/javascript">var submitted=false;</script>
-                            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {alert('Thank you for your message! We will get back to you shortly.'); window.location.reload();}"></iframe>
-                            <form action="https://docs.google.com/forms/d/e/1FAIpQLScZU5A9QSFHB5eUe5rAfdEutXEPmmQcNqDx3SRI72naubd6SA/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-grp">
-                                            <input type="text" name="entry.7538804" placeholder="Full name" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-grp">
-                                            <input type="email" name="entry.1571859900" placeholder="Your email" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-grp">
-                                            <input type="text" name="entry.2139985795" placeholder="Phone number" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-grp">
-                                            <select name="entry.806731782" class="form-select" aria-label="Select service" required>
-                                                <option value="">Select Service</option>
-                                                <option value="Water Purifier — Sales &amp; Installation">Water Purifier — Sales &amp; Installation</option>
-                                                <option value="Water Filtration Vessels">Water Filtration Vessels</option>
-                                                <option value="Solar Energy Solutions">Solar Energy Solutions</option>
-                                                <option value="Water Tank Deep Cleaning">Water Tank Deep Cleaning</option>
-                                                <option value="AMC &amp; Maintenance">AMC &amp; Maintenance</option>
-                                                <option value="Drip Irrigation">Drip Irrigation</option>
-                                                <option value="Automation">Automation</option>
-                                                <option value="House &amp; Office Cleaning">House &amp; Office Cleaning</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-grp">
-                                    <textarea name="entry.1959980234" placeholder="Write message"></textarea>
-                                </div>
-                                <button type="submit" class="btn" style="margin-bottom: 25px;">Send a message</button>
-                            </form>
-                            <div class="emi-note">
-                                <img src="assets/img/Aqua/Assets/bajajfinserv.png" alt="Bajaj Finserv">
-                                <p>Easy EMI available with Bajaj Finserv</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- contact-area-end -->
-
-    </main>
-    <!-- main-area-end -->
-
-    <!-- footer-area -->
-    <footer>
-        <div class="footer-area footer-bg">
-            <div class="footer-top">
-                <div class="container">
-
-                    <div class="row">
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="footer-widget">
-                                <div class="fw-title">
-                                    <h4 class="title">Contact Us</h4>
-                                </div>
-                                <div class="footer-content">
-                                    <p>Head Office: Kottayam, Kerala<br>Branch: Ernakulam, Kerala</p>
-                                    <div class="footer-map" style="margin-top: 15px; margin-bottom: 10px;">
-                                        <span style="display: block; margin-bottom: 6px; font-size: 14px;">Head Office — Kottayam</span>
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3559.8883148175287!2d76.54994440000002!3d9.6120833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOcKwMzYnNDMuNSJOIDc2wrAzMic1OS44IkU!5e1!3m2!1sen!2sin!4v1786191905575!5m2!1sen!2sin" width="100%" height="150" style="border:0; border-radius: 5px;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-                                    </div>
-                                    <div class="footer-map" style="margin-bottom: 20px;">
-                                        <span style="display: block; margin-bottom: 6px; font-size: 14px;">Branch — Ernakulam</span>
-                                        <iframe src="https://maps.google.com/maps?q=NEW+MAX+AQUA+Complete+Water+Solution%20%26%20Electricals,%20Chottanikkara,%20Kerala&t=k&z=17&ie=UTF8&iwloc=&output=embed" width="100%" height="150" style="border:0; border-radius: 5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                    </div>
-                                    <div class="footer-contact">
-                                        <ul class="list-wrap">
-                                            <li class="phone-addess">
-                                                <i class="fas fa-phone-alt"></i>
-                                                <span><strong>Kottayam:</strong> <a href="tel:+917306786132">+91 73067 86132</a></span>
-                                            </li>
-                                            <li class="phone-addess">
-                                                <i class="fas fa-phone-alt"></i>
-                                                <span><strong>Ernakulam:</strong> <a href="tel:+919747177283">+91 97471 77283</a></span>
-                                            </li>
-                                            <!-- <li class="email-addess">
-                                                <i class="fas fa-envelope"></i>
-                                                <a href="mailto:maxcompletewatersolution2020@gmail.com"
-                                                    class="text-wrap-break">maxcompletewatersolution2020@gmail.com</a>
-                                            </li> -->
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="footer-widget">
-                                <div class="fw-title">
-                                    <h4 class="title">Quick Links</h4>
-                                </div>
-                                <div class="fw-link-list">
-                                    <ul class="list-wrap">
-                                        <li><a href="#about">About Us</a></li>
-                                        <li><a href="#services">Our Services</a></li>
-                                        <li><a href="#products">Water Purifiers</a></li>
-                                        <li><a href="#solar">Solar Solutions</a></li>
-                                        <li><a href="#faq">FAQ</a></li>
-                                        <li><a href="#contact">Contact</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="footer-widget">
-                                <div class="fw-title">
-                                    <h4 class="title">Our Services</h4>
-                                </div>
-                                <div class="fw-link-list">
-                                    <ul class="list-wrap">
-                                        <li><a href="#services">Purifier Installation &amp; Service</a></li>
-                                        <li><a href="#vessels">Water Filtration Vessels</a></li>
-                                        <li><a href="#solar">Solar System Installation</a></li>
-                                        <li><a href="#process">Tank Deep Cleaning</a></li>
-                                        <li><a href="#services">AMC &amp; Maintenance</a></li>
-                                        <li><a href="#services">Cartridge Replacement</a></li>
-                                        <li><a href="#services">Drip Irrigation</a></li>
-                                        <li><a href="#services">Automation</a></li>
-                                        <li><a href="#services">House &amp; Office Cleaning</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="footer-widget">
-                                <div class="fw-title">
-                                    <h4 class="title">Payment &amp; Support</h4>
-                                </div>
-                                <div class="footer-content">
-                                    <p>Easy EMI options available on purifiers, vessels and solar systems.</p>
-                                    <div class="footer-emi">
-                                        <img src="assets/img/Aqua/Assets/bajajfinserv.png"
-                                            alt="Bajaj Finserv EMI available">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-7">
-                            <div class="copyright-text">
-                                <p>2026 <a href="index.html">New Max Aqua.</a> All Rights Reserved.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-5">
-                            <div class="footer-bottom-menu">
-                                <ul class="list-wrap">
-                                    <li><a href="#about">Together Toward a Cleaner, Brighter Future</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- footer-area-end -->
-
-    <!-- JS here -->
-    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/jquery.odometer.min.js"></script>
-    <script src="assets/js/BeerSlider.js"></script>
-    <script src="assets/js/jquery.appear.js"></script>
-    <script src="assets/js/swiper-bundle.min.js"></script>
-    <script src="assets/js/jarallax.min.js"></script>
-    <script src="assets/js/slick.min.js"></script>
-    <script src="assets/js/gsap.js"></script>
-    <script src="assets/js/ScrollTrigger.js"></script>
-    <script src="assets/js/SplitText.js"></script>
-    <script src="assets/js/gsap-animation.js"></script>
-    <script src="assets/js/tg-cursor.min.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/aos.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/vessels.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+<script src="assets/new/filter3d.js?v=6" defer></script>
+<script src="assets/new/newmax.js?v=7" defer></script>
 </body>
-
 </html>
-
-
